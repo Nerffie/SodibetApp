@@ -41,6 +41,7 @@ public class Verify extends HttpServlet {
 				this.getServletContext().getRequestDispatcher("/WEB-INF/verifyDone.jsp").forward(request, response);
 			}
 			else {
+				System.out.println("it didn't verify");
 				response.sendRedirect("Home");
 			}
 			

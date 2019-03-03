@@ -1,5 +1,7 @@
 package Forms;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 import javax.mail.Message;
@@ -11,10 +13,16 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 import Beans.Utilisateur;
+import Dao.DAOConfigurationException;
 
 public class Mail {
-	private final String username="testsodibet@gmail.com";
-	private final String password="sodibettesting";
+	//private final String username="testsodibet@gmail.com";
+	//private final String password="sodibettesting";
+	private static final String PROPERTY_URL             = "url";
+    //private static final String PROPERTY_DRIVER          = "driver";
+    private static final String PROPERTY_NOM_UTILISATEUR = "nomutilisateur";
+    private static final String PROPERTY_MOT_DE_PASSE    = "motdepasse";
+    private static final String FICHIER_PROPERTIES       = "/Forms/mail.properties";
 	private Utilisateur utilisateur;
 	
 	public Mail(Utilisateur utilisateur) {
@@ -22,6 +30,29 @@ public class Mail {
 	}
 	
 	public void sendMail() {
+		Properties properties = new Properties();
+        String url;
+        //String driver;
+        String nomUtilisateur;
+        String motDePasse;
+
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        InputStream fichierProperties = classLoader.getResourceAsStream( FICHIER_PROPERTIES );
+
+        if ( fichierProperties == null ) {
+            throw new DAOConfigurationException( "Le fichier properties " + FICHIER_PROPERTIES + " est introuvable." );
+        }
+
+        try {
+            properties.load( fichierProperties );
+            url = properties.getProperty( PROPERTY_URL );
+            //driver = properties.getProperty( PROPERTY_DRIVER );
+            nomUtilisateur = properties.getProperty( PROPERTY_NOM_UTILISATEUR );
+            motDePasse = properties.getProperty( PROPERTY_MOT_DE_PASSE );
+        } catch ( IOException e ) {
+            throw new DAOConfigurationException( "Impossible de charger le fichier properties " + FICHIER_PROPERTIES, e );
+        }
+		
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.starttls.enable", "true");
@@ -31,24 +62,23 @@ public class Mail {
 		Session session = Session.getInstance(props,
 				  new javax.mail.Authenticator() {
 					protected PasswordAuthentication getPasswordAuthentication() {
-						return new PasswordAuthentication(username, password);
+						return new PasswordAuthentication(nomUtilisateur
+								, motDePasse);
 					}
 				  });
 	
 		try {
 
 			Message message = new MimeMessage(session);
-			message.setFrom(new InternetAddress("sodibettest@gmail.com"));
+			message.setFrom(new InternetAddress(nomUtilisateur));
 			message.setRecipients(Message.RecipientType.TO,
 				InternetAddress.parse(utilisateur.getEmail()));
 			message.setSubject("Validation du compte Sodibet");
 			message.setText("Bonjour "+utilisateur.getNom()+" "+utilisateur.getPrenom()+"\n\n"+"Merci d'avoir créer un compte chez Sodibet,"
 				+ "\n\n Pour vérifier votre compte, veuillez cliquez sur le lien suivant!"
-					+"\n\n"+"http://localhost:8080/Sodibet/Verify?key="+utilisateur.getValide_hash());
+					+"\n\n"+url+"/Verify?key="+utilisateur.getValide_hash());
 
 			Transport.send(message);
-
-			System.out.println("Done");
 
 		} catch (MessagingException e) {
 			throw new RuntimeException(e);

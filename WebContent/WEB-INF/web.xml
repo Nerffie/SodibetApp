@@ -35,7 +35,6 @@
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
     <url-pattern>/Login</url-pattern>
-    <!--  <url-pattern>/</url-pattern>-->
   </servlet-mapping>
   <servlet>
     <servlet-name>SignUp</servlet-name>
@@ -45,8 +44,7 @@
     <servlet-name>SignUp</servlet-name>
     <url-pattern>/SignUp</url-pattern>
   </servlet-mapping>
-   
-    <servlet>
+  <servlet>
     <servlet-name>Verify</servlet-name>
     <servlet-class>Srv.Verify</servlet-class>
   </servlet>
@@ -55,5 +53,12 @@
     <url-pattern>/Verify</url-pattern>
   </servlet-mapping>
 
-  
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>Srv.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
 </web-app>

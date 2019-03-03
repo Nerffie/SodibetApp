@@ -69,8 +69,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Contact" class="active">Contact</a>
           </li>
           <li>
-            <a href="Login"><button  type="button" class="btn w3ls-btn" >
-              Login
+            <a href="Logout"><button  type="button" class="btn w3ls-btn" >
+              Log out
             </button></a>
           </li>
         </ul>
@@ -81,7 +81,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner layer" id="home">
 		<div class="container">
 			<div class="row banner-text">
-				<div class="slider-info col-lg-8">
+				  <div class="slider-info col-lg-8">
 					<div class="agileinfo-logo mt-5">
 						<h2 data-aos="fade-down">
 							<span class="fab fa-blackberry text-center"></span> ${utilisateur.getPrenom() }&nbsp;${utilisateur.getNom() }
@@ -89,11 +89,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<h3 class="txt-w3_agile" data-aos="fade-down">${utilisateur.getCategorie()}</h3>
 					<h1></h1>
-						<a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">Login</a>
+						 <!--  <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">Login</a>
 					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="About" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Plus D'infos</a>
-				
+				-->
 				</div>
-				<!--<div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
+				<!--  <div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
 					<h5><i class="fas mr-2 fa-laptop"></i>Enregistrez vous !</h5>
 					<form action="#" class="mt-4" method="post">
 						<input class="form-control" type="text" name="Name" placeholder="Nom" required />
