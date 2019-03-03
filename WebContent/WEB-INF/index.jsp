@@ -93,7 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="About" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Plus D'infos</a>
 				
 				</div>
-				<!--  <div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
+				<!--<div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
 					<h5><i class="fas mr-2 fa-laptop"></i>Enregistrez vous !</h5>
 					<form action="#" class="mt-4" method="post">
 						<input class="form-control" type="text" name="Name" placeholder="Nom" required />
