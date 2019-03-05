@@ -62,11 +62,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
           <li>
-            <a href="About" class="active">A Propos</a>
+            <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
-          
+             <li>
+            <a href="#" class="active">Hypothéses</a>
+          </li>
+             <li>
+            <a href="#" class="active">Posez une question</a>
+          </li>
           <li>
-            <a href="Contact" class="active">Contact</a>
+            <a href="#" class="active">Contact</a>
+          </li>
+             <li>
+            <a href="#" class="active">Plaquette</a>
           </li>
           <li>
             <a href="Logout"><button  type="button" class="btn w3ls-btn" >
@@ -93,18 +101,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="About" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Plus D'infos</a>
 				-->
 				</div>
-				<!--  <div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
-					<h5><i class="fas mr-2 fa-laptop"></i>Enregistrez vous !</h5>
-					<form action="#" class="mt-4" method="post">
-						<input class="form-control" type="text" name="Name" placeholder="Nom" required />
-						<input class="form-control" type="email" name="Email" placeholder="Email" required />
-						<input class="form-control" type="password" name="Number" placeholder="Mot de passe" required />
-						<input class="form-control" type="password" name="Number" placeholder="Confirmer mot de passe" required />
-						<input class="form-control text-capitalize" type="submit" value="Enregistrement !">
-					</form>
-				</div>-->
 			</div>
 		</div>
+		
+		
+		
 	</div>
 	<!-- //banner -->
 </header>

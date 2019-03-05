@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Connectez-vous</title>
+<title>Prédimensionnement</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -60,35 +60,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="bar"></div>
           </div>
         </div>
+        <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
+          <li>
+            <a href="Predimensionnement" class="active">Prédimensionnement</a>
+          </li>
+             <li>
+            <a href="#" class="active">Hypothéses</a>
+          </li>
+             <li>
+            <a href="#" class="active">Posez une question</a>
+          </li>
+          <li>
+            <a href="#" class="active">Contact</a>
+          </li>
+             <li>
+            <a href="#" class="active">Plaquette</a>
+          </li>
+          <li>
+            <a href="Logout"><button  type="button" class="btn w3ls-btn" >
+              Log out
+            </button></a>
+          </li>
+        </ul>
       </div>
     </nav>
     <!-- //nav -->
 	<!-- banner -->
 	<div class="banner layer" id="home">
 		<div class="container">
-			<div class="row banner-text" >
-				<div class="col-lg-4 col-md-2 mt-lg-0 mt-5 banner-form" data-aos="fade-right"></div>
-				<div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
-				<br>
-					<h5><i class="fas mr-2 fa-laptop"></i>Se Connecter !</h5>
-					<br>
-					<form action="#" class="mt-4" method="post">
-						
-						<input class="form-control" type="email" name="email" placeholder="Email" required />
-						<span class="erreur">${form.erreurs['email']}</span>
-						
-						<input class="form-control" type="password" name="password" placeholder="Mot de passe" required/>
-						<span class="erreur">${form.erreurs['password']}</span>
-						<input class="form-control text-capitalize" type="submit" value="Connexion">
-					</form>
-					<a href="SignUp"><i class="fas mr-2">Vous n'avez pas de compte ?</i></a>
-						<br><br><br><br><br><br>
+			<div class="row banner-text">
+				  <div class="slider-info col-lg-8">
+					<ul>
+					<li><a class="btn mt-4 text-capitalize" data-aos="fade-up" href="Portee"  role="button">Détermination de la portée limite par la flèche</a></li>
+					<li><a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="Epaisseur"  role="button">Détermination de l'épaisseur du plancher</a></li>
+					<li><a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="Hauteur"  role="button">Calcul de la hauteur sous plafond nette</a></li>
+					<li><a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="Litrage" role="button">Calcul du litrage</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
+		
+		
+		
 	</div>
 	<!-- //banner -->
-
 </header>
 <!-- //header -->
 

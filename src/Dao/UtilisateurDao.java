@@ -10,4 +10,8 @@ public interface UtilisateurDao {
     boolean isValide(Long id) throws DAOException;
     void verifier(String key) throws DAOException;
     String getPass(String email) throws DAOException;
+    void nePlusAfficher1(String email) throws DAOException;
+    void nePlusAfficher2(String email) throws DAOException;
+    void nePlusAfficher3(String email) throws DAOException;
+    void nePlusAfficher4(String email) throws DAOException;
 }

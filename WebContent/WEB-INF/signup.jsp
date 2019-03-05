@@ -62,13 +62,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
           <li>
-            <a href="About" class="active">A Propos</a>
-          </li>
-          
-          <li>
-            <a href="Contact" class="active">Contact</a>
-          </li>
-          <li>
             <a href="Login"><button  type="button" class="btn w3ls-btn" >
               Login
             </button></a>
@@ -102,8 +95,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="erreur">${form.erreurs['password_confirmation']}</span>
 					
 					<input class="form-control" type="text" name="ville" placeholder="Ville" required="" />
-					<input class="form-control" type="date" name="date_naissance" placeholder="Date de naissance" required="" /><br>
+					<label class ="form-control "for="dateNaissance">Date de naissance</label>
+					<input class="form-control" id = "dateNaissance"type="date" name="date_naissance" placeholder="Date de naissance" required="" /><br>
 					<!--  <td><label class="form-control" for="categorie">Sélectionnez catégorie</label></td>-->
+					
 					<select class="form-control" name="categorie" id="categorie" onchange="sous_categorie_show(this);" required="">
 						<option selected>Spécifiez votre catégorie
 						<option class="form-control" value="architecte">Architecte

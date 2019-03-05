@@ -33,6 +33,7 @@ public class Mail {
 		Properties properties = new Properties();
         String url;
         //String driver;
+        
         String nomUtilisateur;
         String motDePasse;
 

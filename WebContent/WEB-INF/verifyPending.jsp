@@ -62,16 +62,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
           <li>
-            <a href="Home" class="active">Accueil</a>
-          </li>
-          <li>
-            <a href="About" class="active">A Propos</a>
-          </li>
-          
-          <li>
-            <a href="Contact" class="active">Contact</a>
-          </li>
-          <li>
             <a href="Login"><button  type="button" class="btn w3ls-btn" >
               Login
             </button></a>
@@ -87,9 +77,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-lg-4 col-md-2 mt-lg-0 mt-5 banner-form" data-aos="fade-right"></div>
 				<div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
 				<br>
-					<h3><i class="fas mr-2"></i>Veuillez verifier votre compte pour accèder aux fonctionnalitées.</h3>
-					<h1>Un mail vous a été envoyé</h1>
-					<h2>Compte non activé</h2>
+					<h3><i class="fas mr-2">Compte non activé</i></h3>
+					<h1><i class="fas mr-2">Un mail vous a été envoyé</i></h1>
+					<h2></h2>
+					
 					<br>
 						<br><br><br><br><br><br>
 				</div>

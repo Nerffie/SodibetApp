@@ -217,4 +217,95 @@ public class UtilisateurDaoImpl implements UtilisateurDao {
         }
         return motDePasseHash;
     }
+    
+    private static final String SQL_UPDATE_PORTEE_1 = "UPDATE utilisateur SET portee_1 = 1 WHERE email = ?";
+    public void nePlusAfficher1(String email) {
+    	Connection connexion = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet valeursAutoGenerees = null;
+
+        try {
+        	connexion = daoFactory.getConnection();
+            preparedStatement = DAOUtilitaire.initialisationRequetePreparee( connexion, SQL_UPDATE_PORTEE_1, false, email);
+            int statut = preparedStatement.executeUpdate();
+
+            /* Analyse du statut retourné par la requête d'insertion */
+            if ( statut == 0 ) {
+                throw new DAOException( "Échec de la mise à jour de ne plus afficher portee 1 en base de donnée." );
+            }
+        } catch ( SQLException e ) {
+            throw new DAOException( e );
+        } finally {
+            DAOUtilitaire.fermeturesSilencieuses( valeursAutoGenerees, preparedStatement, connexion );
+        }
+    }
+    
+    
+    
+    private static final String SQL_UPDATE_PORTEE_2 = "UPDATE utilisateur SET portee_2 = 1 WHERE email = ?";
+    public void nePlusAfficher2(String email) {
+    	Connection connexion = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet valeursAutoGenerees = null;
+
+        try {
+        	connexion = daoFactory.getConnection();
+            preparedStatement = DAOUtilitaire.initialisationRequetePreparee( connexion, SQL_UPDATE_PORTEE_2, false, email);
+            int statut = preparedStatement.executeUpdate();
+
+            /* Analyse du statut retourné par la requête d'insertion */
+            if ( statut == 0 ) {
+                throw new DAOException( "Échec de la mise à jour de ne plus afficher portee 2 en base de donnée." );
+            }
+        } catch ( SQLException e ) {
+            throw new DAOException( e );
+        } finally {
+            DAOUtilitaire.fermeturesSilencieuses( valeursAutoGenerees, preparedStatement, connexion );
+        }
+    }
+
+    
+    private static final String SQL_UPDATE_PORTEE_3 = "UPDATE utilisateur SET portee_3 = 1 WHERE email = ?";
+    public void nePlusAfficher3(String email) {
+    	Connection connexion = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet valeursAutoGenerees = null;
+
+        try {
+        	connexion = daoFactory.getConnection();
+            preparedStatement = DAOUtilitaire.initialisationRequetePreparee( connexion, SQL_UPDATE_PORTEE_3, false, email);
+            int statut = preparedStatement.executeUpdate();
+
+            /* Analyse du statut retourné par la requête d'insertion */
+            if ( statut == 0 ) {
+                throw new DAOException( "Échec de la mise à jour de ne plus afficher portee 3 en base de donnée." );
+            }
+        } catch ( SQLException e ) {
+            throw new DAOException( e );
+        } finally {
+            DAOUtilitaire.fermeturesSilencieuses( valeursAutoGenerees, preparedStatement, connexion );
+        }
+    }
+    
+    private static final String SQL_UPDATE_PORTEE_4 = "UPDATE utilisateur SET portee_4 = 1 WHERE email = ?";
+    public void nePlusAfficher4(String email) {
+    	Connection connexion = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet valeursAutoGenerees = null;
+
+        try {
+        	connexion = daoFactory.getConnection();
+            preparedStatement = DAOUtilitaire.initialisationRequetePreparee( connexion, SQL_UPDATE_PORTEE_4, false, email);
+            int statut = preparedStatement.executeUpdate();
+
+            /* Analyse du statut retourné par la requête d'insertion */
+            if ( statut == 0 ) {
+                throw new DAOException( "Échec de la mise à jour de ne plus afficher portee 4 en base de donnée." );
+            }
+        } catch ( SQLException e ) {
+            throw new DAOException( e );
+        } finally {
+            DAOUtilitaire.fermeturesSilencieuses( valeursAutoGenerees, preparedStatement, connexion );
+        }
+    }
 }

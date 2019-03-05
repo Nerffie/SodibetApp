@@ -52,7 +52,6 @@
     <servlet-name>Verify</servlet-name>
     <url-pattern>/Verify</url-pattern>
   </servlet-mapping>
-
   <servlet>
     <servlet-name>Logout</servlet-name>
     <servlet-class>Srv.Logout</servlet-class>
@@ -60,5 +59,48 @@
   <servlet-mapping>
     <servlet-name>Logout</servlet-name>
     <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Predimensionnement</servlet-name>
+    <servlet-class>Srv.Predimensionnement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Predimensionnement</servlet-name>
+    <url-pattern>/Predimensionnement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Portee</servlet-name>
+    <servlet-class>Srv.Portee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Portee</servlet-name>
+    <url-pattern>/Portee</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Epaisseur</servlet-name>
+    <servlet-class>Srv.Epaisseur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Epaisseur</servlet-name>
+    <url-pattern>/Epaisseur</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Hauteur</servlet-name>
+    <servlet-class>Srv.Hauteur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hauteur</servlet-name>
+    <url-pattern>/Hauteur</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+    <servlet-name>Litrage</servlet-name>
+    <servlet-class>Srv.Litrage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Litrage</servlet-name>
+    <url-pattern>/Litrage</url-pattern>
   </servlet-mapping>
 </web-app>
