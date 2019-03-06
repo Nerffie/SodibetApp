@@ -16,9 +16,11 @@ public class VerifyUser {
 	public boolean verificationPossible() {
 		Utilisateur utilisateurAValider = utilisateurDao.trouverParValideHash(key);
 		if (utilisateurAValider == null){
+			System.out.println("3");
 			return false;
 		}
 		else {
+			System.out.println("4");
 			return !utilisateurDao.isValide(utilisateurAValider.getId());
 		}
 	}
@@ -31,8 +33,10 @@ public class VerifyUser {
 	public boolean traiterVerification() {
 		if (verificationPossible()) {
 			verifierUtilisateur();
+			System.out.println("1");
 			return true;
 		}
+			System.out.println("2");
 		return false;
 	}
 }

@@ -42,14 +42,9 @@ public class Hauteur extends HttpServlet {
 		HttpSession session = req.getSession();
 		
 		if (session.getAttribute(ATT_USER)!=null) {
-			Utilisateur utilisateur = (Utilisateur) session.getAttribute(ATT_USER);
-			if(utilisateur.getPortee_3()==1) {
 				this.getServletContext().getRequestDispatcher("/WEB-INF/hauteur.jsp").forward(req, resp);
-			}
-			else {
-				this.getServletContext().getRequestDispatcher("/WEB-INF/hauteurExplication.jsp").forward(req, resp);
-			}
 		}
+		
 		else {
 			resp.sendRedirect("Login");
 		}
@@ -61,12 +56,10 @@ public class Hauteur extends HttpServlet {
 		if(req.getParameter(ATT_DONT_SHOW)!=null) {
 			HttpSession session = req.getSession();
 			Utilisateur utilisateur = (Utilisateur) session.getAttribute(ATT_USER);
+			new DontShow(utilisateurDao,3,utilisateur).nePlusAfficher();
 			this.getServletContext().getRequestDispatcher("/WEB-INF/hauteur.jsp").forward(req, resp);
 			//update la table pour mettre portee 1 à 1
-			new DontShow(utilisateurDao,3,utilisateur).nePlusAfficher();
-		}
-		else if(req.getParameter(ATT_NEXT)!=null) {
-			this.getServletContext().getRequestDispatcher("/WEB-INF/hauteur.jsp").forward(req, resp);
+			
 		}
 	}
 

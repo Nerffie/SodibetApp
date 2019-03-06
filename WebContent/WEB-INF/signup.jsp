@@ -129,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 					
 					
-						<input class="form-control text-capitalize" type="submit" value="Connexion">
+						<input class="form-control text-capitalize" type="submit" value="Inscription">
 					</form>
 						<br><br><br><br><br><br>
 				</div>

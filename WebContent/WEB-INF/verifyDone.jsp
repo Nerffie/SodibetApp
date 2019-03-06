@@ -62,16 +62,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
           <li>
-            <a href="Home" class="active">Accueil</a>
-          </li>
-          <li>
-            <a href="About" class="active">A Propos</a>
-          </li>
-          
-          <li>
-            <a href="Contact" class="active">Contact</a>
-          </li>
-          <li>
             <a href="Login"><button  type="button" class="btn w3ls-btn" >
               Login
             </button></a>

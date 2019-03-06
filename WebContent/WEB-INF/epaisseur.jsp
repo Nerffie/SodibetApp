@@ -1,3 +1,4 @@
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="#" class="active">Plaquette</a>
           </li>
           <li>
-            <a href="Logout"><button  type="button" class="btn w3ls-btn" >
+            <a href="Logout"><button  type="button" class="btn btn-secondary" >
               Log out
             </button></a>
           </li>
@@ -93,7 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="agileinfo-logo mt-5">
 					</div>
 					<h3 class="txt-w3_agile" data-aos="fade-down">Epaisseur du plancherE</h3>
-					<p>Formulaire pour l'épaisseur du plancher</p>
+					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Besoin d'aide ?</a>
 				</div>
 			</div>
 		</div>
@@ -104,6 +105,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //banner -->
 </header>
 <!-- //header -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Explication</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Brève Explication sur ce que c'est l'épaisseur
+			</div>
+			<div class="modal-footer">
+			<form method="post" action="#"><input type="submit" class ="btn btn-primary" name="dontShow" value="Ne plus afficher">
+					</form>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+			</div>
+		</div>
+	</div>
+</div>
 
     <!-- js -->
     <script src="inc/js/jquery-2.2.3.min.js"></script>
@@ -144,7 +165,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     </script>
     <!-- //testimonials  Responsiveslides -->
-
+<c:if test="${utilisateur.getPortee_2()==0}">
+<script>
+   
+    $(document).ready(function() {
+    	  $('#exampleModalCenter1').modal('show');
+    	});
+</script>
+</c:if>
 	<!-- sticky nav bar-->
 	<script>
 		$(() => {

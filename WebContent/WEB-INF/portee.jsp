@@ -1,12 +1,15 @@
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Portée</title>
 <!-- for-mobile-apps -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Landing Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
 
     <script>
         addEventListener("load", function () {
@@ -17,6 +20,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             window.scrollTo(0, 1);
         }
     </script>
+
 	
 	<!-- animation css files -->
 	<link rel="stylesheet" href="inc/css/animation-aos.css">
@@ -34,6 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //google fonts -->
 	
 </head>
+
 <body>
 
 <!-- header -->
@@ -77,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="#" class="active">Plaquette</a>
           </li>
           <li>
-            <a href="Logout"><button  type="button" class="btn w3ls-btn" >
+            <a href="Logout"><button  type="button" class="btn btn-secondary" >
               Log out
             </button></a>
           </li>
@@ -89,21 +94,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner layer" id="home">
 		<div class="container">
 			<div class="row banner-text">
-				  <div class="slider-info col-lg-8">
+				<div class="slider-info col-lg-8">
 					<div class="agileinfo-logo mt-5">
 					</div>
-					<h3 class="txt-w3_agile" data-aos="fade-down">CALCUL DE LA PORTEE</h3>
-					<p>Formulaire pour le calcul de portée</p>
+					<h3 class="txt-w3_agile" data-aos="fade-down">Portée limite par la flèche </h3>
+					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Besoin d'aide ?</a>
 				</div>
-			</div>
 		</div>
-		
-		
-		
 	</div>
 	<!-- //banner -->
 </header>
 <!-- //header -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Explication</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Brève Explication sur ce que c'est la portée
+			</div>
+			<div class="modal-footer">
+			<form method="post" action="#"><input type="submit" class ="btn btn-primary" name="dontShow" value="Ne plus afficher">
+					</form>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+			</div>
+		</div>
+	</div>
+</div>
 
     <!-- js -->
     <script src="inc/js/jquery-2.2.3.min.js"></script>
@@ -144,6 +165,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     </script>
     <!-- //testimonials  Responsiveslides -->
+
+<c:if test="${utilisateur.getPortee_1()==0}">
+<script>
+   
+    $(document).ready(function() {
+    	  $('#exampleModalCenter1').modal('show');
+    	});
+</script>
+</c:if>
+
+
 
 	<!-- sticky nav bar-->
 	<script>
