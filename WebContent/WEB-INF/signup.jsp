@@ -82,25 +82,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<form action="#" class="mt-4" method="post">
 					<table>
 					<tr>
-					<td><input class="form-control" type="text" name="prenom" placeholder="Prénom" required="" /></td>
-					<td><input class="form-control" type="text" name="nom" placeholder="Nom" required="" /></td>
+					<td><input class="form-control" type="text" name="prenom" placeholder="Prénom" required/></td>
+					<td><input class="form-control" type="text" name="nom" placeholder="Nom" required/></td>
 					</tr>
 					</table>
-					<input class="form-control" type="email" name="email" placeholder="Email" required="" />
+					<input class="form-control" type="email" name="email" placeholder="Email" required/>
 					<span class="erreur">${form.erreurs['email']}</span>
 					
-					<input class="form-control" type="password" name="password" placeholder="Mot de passe" required="" />
+					<input class="form-control" type="password" name="password" placeholder="Mot de passe" required/>
 					<span class="erreur">${form.erreurs['password']}</span>
-					<input class="form-control" type="password" name="password_confirmation" placeholder="Confirmer mot de passe" required="" />
+					<input class="form-control" type="password" name="password_confirmation" placeholder="Confirmer mot de passe" required />
 					<span class="erreur">${form.erreurs['password_confirmation']}</span>
 					
-					<input class="form-control" type="text" name="ville" placeholder="Ville" required="" />
+					<input class="form-control" type="text" name="ville" placeholder="Ville" required/>
 					<label class ="form-control "for="dateNaissance">Date de naissance</label>
-					<input class="form-control" id = "dateNaissance"type="date" name="date_naissance" placeholder="Date de naissance" required="" /><br>
+					<input class="form-control" id = "dateNaissance"type="date" name="date_naissance" placeholder="Date de naissance" required/><br>
 					<!--  <td><label class="form-control" for="categorie">Sélectionnez catégorie</label></td>-->
 					
-					<select class="form-control" name="categorie" id="categorie" onchange="sous_categorie_show(this);" required="">
-						<option selected>Spécifiez votre catégorie
+					<select class="form-control" name="categorie" id="categorie" onchange="sous_categorie_show(this);" required>
 						<option class="form-control" value="architecte">Architecte
 						<option class="form-control" value="ingenieur">Ingénieur
 					</select>
@@ -108,15 +107,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 					<!--  <td><label class="form-control" for="sous_categorie">Spécifiez votre choix</label></td>-->
 					<div>
-							<select class="form-control" name="sous_categorie" id="sous_categorie_architecte" style="display: none;">
-								<option selected>Spécifiez votre type
+							<select class="form-control" name="sous_categorie_architecte" id="sous_categorie_architecte" style="display: block;">
 								<option class="form-control">Agence et bureaux d'architectures
 								<option class="form-control">Eleve architecte
 							</select>
 					</div>
 					<div>
-							<select style="display: none;" class="form-control" name="sous_categorie" id="sous_categorie_ingenieur">
-								<option selected>Spécifiez votre type
+							<select style="display: none;" class="form-control" name="sous_categorie_ingenieur" id="sous_categorie_ingenieur">
 								<option class="form-control">Bureaux d'étude
 								<option class="form-control">Bureaux de contrôle
 								<option class="form-control">Entreprise de construction

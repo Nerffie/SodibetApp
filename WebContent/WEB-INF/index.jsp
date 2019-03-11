@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div id="brand" data-aos="zoom-in-up">
         <div id="logo">
           <a href="Home">
-            <i class="fab fa-blackberry"></i>
+            <i class="fab fa-blackberry "></i>
           </a>
         </div>
         <div id="word-mark">

@@ -74,5 +74,22 @@ public class DAOFactory {
     public UtilisateurDao getUtilisateurDao() {
         return new UtilisateurDaoImpl( this );
     }
+    
+    public IsostatiqueSimpleDao getIsostatiqueSimpleDao() {
+    	return new IsostatiqueSimpleDaoImpl(this);
+    }
+    
+    public IsostatiqueJumelleDao getIsostatiqueJumelleDao() {
+    	return new IsostatiqueJumelleDaoImpl(this);
+    }
+    
+    public ContinueSimpleDao getContinueSimpleDao() {
+    	return new ContinueSimpleDaoImpl(this);
+    }
+    
+    public ContinueJumelleDao getContinueJumelleDao() {
+    	return new ContinueJumelleDaoImpl(this);
+    }
+    
 }
 

@@ -22,7 +22,7 @@ public class InscriptionForm {
 	private static final String CHAMP_PASS  = "password";
 	private static final String CHAMP_PASS_CONF  = "password_confirmation";
 	private static final String CHAMP_CATEGORIE  = "categorie";
-	private static final String CHAMP_SOUS_CATEGORIE  = "sous_categorie";
+	private static final String[] CHAMP_SOUS_CATEGORIE  = {"sous_categorie_architecte","sous_categorie_ingenieur"};
 	private static final String CHAMP_DATE_NAISSANCE  = "date_naissance";
 	private static final String ALGO_CHIFFREMENT = "SHA-256";
 	
@@ -52,7 +52,7 @@ public class InscriptionForm {
 	    String motDePasse = getValeurChamp( request, CHAMP_PASS );
 	    String confirmation = getValeurChamp( request, CHAMP_PASS_CONF );
 	    String categorie = getValeurChamp(request, CHAMP_CATEGORIE);
-	    String sous_categorie = getValeurChamp(request, CHAMP_SOUS_CATEGORIE);
+	    String sous_categorie = getSousCategorie(request,categorie);
 	    String birthday = getValeurChamp(request,CHAMP_DATE_NAISSANCE);
 	    java.util.Date date;
 	    Date date_naissance =null;
@@ -99,6 +99,14 @@ public class InscriptionForm {
 	}
 	
 	
+	private String getSousCategorie(HttpServletRequest request, String categorie) {
+		switch (categorie) {
+		case "architecte" : return getValeurChamp(request, CHAMP_SOUS_CATEGORIE[0]);
+		case "ingenieur" : return getValeurChamp(request, CHAMP_SOUS_CATEGORIE[1]);
+		}
+		return null;
+	}
+
 	private void traiterValideHash (String email,String nom,String prenom,Utilisateur utilisateur) {
 		ConfigurablePasswordEncryptor passwordEncryptor = new ConfigurablePasswordEncryptor();
 	    passwordEncryptor.setAlgorithm( ALGO_CHIFFREMENT );
