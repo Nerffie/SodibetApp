@@ -169,7 +169,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<input type="submit" name ="calcul" value="Afficher résultat">	
 			</div>
 		</form>
-		<h3>${resultat}</h3>
 	</div>
 </section>
 <!-- //contact -->

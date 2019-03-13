@@ -22,7 +22,7 @@ public class PorteeForm {
 	private ContinueSimpleDao      continueSimpleDao;
 	private ContinueJumelleDao      continueJumelleDao;
 	
-	private ArrayList<Float> resultat = new ArrayList<Float>();
+	private ArrayList<Float> resultat;
 
 	public PorteeForm(IsostatiqueSimpleDao isostatiqueSimpleDao, IsostatiqueJumelleDao isostatiqueJumelleDao,
 			ContinueSimpleDao continueSimpleDao, ContinueJumelleDao continueJumelleDao) {
@@ -31,6 +31,7 @@ public class PorteeForm {
 		this.isostatiqueJumelleDao = isostatiqueJumelleDao;
 		this.continueSimpleDao = continueSimpleDao;
 		this.continueJumelleDao = continueJumelleDao;
+		this.resultat = new ArrayList<Float>();
 	}
 	
 	

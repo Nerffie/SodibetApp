@@ -2,12 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Epaisseur</title>
+<title>Portée</title>
 <!-- for-mobile-apps -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Landing Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
 
     <script>
         addEventListener("load", function () {
@@ -18,6 +20,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             window.scrollTo(0, 1);
         }
     </script>
+
 	
 	<!-- animation css files -->
 	<link rel="stylesheet" href="inc/css/animation-aos.css">
@@ -35,6 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //google fonts -->
 	
 </head>
+
 <body>
 
 <!-- header -->
@@ -90,73 +94,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner layer" id="home">
 		<div class="container">
 			<div class="row banner-text">
-				  <div class="slider-info col-lg-8">
-					<div class="agileinfo-logo mt-5">
-					</div>
-					<h3 class="txt-w3_agile" data-aos="fade-down">Epaisseur du plancher</h3>
-					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Besoin d'aide ?</a>
+				<div class=" col-lg-8">
+					<h3 class="txt-w3_agile" data-aos="fade-down">Calcul portée limite par la flèche</h3>
 				</div>
-			</div>
 		</div>
-		
-		
-		
+	</div>
 	</div>
 	<!-- //banner -->
+	
 </header>
-<!-- //header -->
 <section class="contact py-5" id="contact">
+
 	<div class="container py-lg-3">
-		<form action="#" method="post" data-aos="fade-up">
-			<div class="row">
-				<div class="col-md-6 styled-input mt-0">
-				<h3>Charges d'exloitations (daN/m2)<br></h3>
-					<select class="form-control" name="charge" required>
-						<option class="form-control" selected value="150">150
-						<option class="form-control" value="250">250
-						<option class="form-control" value="400">400
-						<option class="form-control" value="500">500
-						<option class="form-control" value="150/T">150/T
-						<option class="form-control" value="100/T">100/T
-					</select>
-				</div>
-				<div class="col-md-6 styled-input mt-md-0">
-				</div> 
-			</div>
-			<br>	
-			<h3>La portée :<br></h3>
-			<div class="row">
-				<div class="col-md-6 styled-input">
-					<input type="text" name="portee" placeholder="0" >
-				</div> 
-			</div>
-			<div class="click text-center mt-3">
-				<input type="submit" name ="calcul" value="Afficher résultat">	
-			</div>
-		</form>
+
 		<h3>${resultat}</h3>
 	</div>
 </section>
-<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Explication</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				Brève Explication sur ce que c'est l'épaisseur
-			</div>
-			<div class="modal-footer">
-			<form method="post" action="#"><input type="submit" class ="btn btn-primary" name="dontShow" value="Ne plus afficher">
-					</form>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-			</div>
-		</div>
-	</div>
-</div>
+<!-- //contact -->
+<!-- //header -->
+
 
     <!-- js -->
     <script src="inc/js/jquery-2.2.3.min.js"></script>
@@ -197,7 +153,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     </script>
     <!-- //testimonials  Responsiveslides -->
-<c:if test="${utilisateur.getPortee_2()==0}">
+
+<c:if test="${utilisateur.getPortee_1()==0}">
 <script>
    
     $(document).ready(function() {
@@ -205,6 +162,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     	});
 </script>
 </c:if>
+
+
+
 	<!-- sticky nav bar-->
 	<script>
 		$(() => {

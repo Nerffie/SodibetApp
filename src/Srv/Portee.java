@@ -77,7 +77,7 @@ public class Portee extends HttpServlet {
 		if(req.getParameter(ATT_CALCUL)!=null) {
 			ArrayList<Float> resultat = new PorteeForm(isostatiqueSimpleDao, isostatiqueJumelleDao, continueSimpleDao, continueJumelleDao).calculerPortee(req);
 			req.setAttribute(ATT_RESULT, resultat);
-			this.getServletContext().getRequestDispatcher("/WEB-INF/portee.jsp").forward(req, resp);
+			this.getServletContext().getRequestDispatcher("/WEB-INF/porteeResultat.jsp").forward(req, resp);
 		}
 	}
 
