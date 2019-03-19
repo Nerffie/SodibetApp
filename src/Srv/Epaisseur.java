@@ -27,6 +27,9 @@ public class Epaisseur extends HttpServlet {
 	public static final String ATT_NEXT = "next";
 	public static final String ATT_CALCUL = "calcul";
 	public static final String ATT_RESULT = "resultat";
+	public static final String ATT_CHARGE = "charge";
+	public static final String ATT_PORTEE = "portee";
+	private static final String ATT_ERROR = "erreur";
 	public static final String CONF_DAO_FACTORY = "daofactory";
     
 	
@@ -77,9 +80,18 @@ public class Epaisseur extends HttpServlet {
 			//update la table pour mettre portee 1 à 1	
 		}
 		if(req.getParameter(ATT_CALCUL)!=null) {
-			ArrayList<ArrayList<ArrayList<Integer>>> resultat = new EpaisseurForm(isostatiqueSimpleDao, isostatiqueJumelleDao, continueSimpleDao, continueJumelleDao).calculerEpaisseur(req);
-			req.setAttribute(ATT_RESULT, resultat);
-			this.getServletContext().getRequestDispatcher("/WEB-INF/epaisseurResultat.jsp").forward(req, resp);
+			EpaisseurForm form = new EpaisseurForm(isostatiqueSimpleDao, isostatiqueJumelleDao, continueSimpleDao, continueJumelleDao);
+			ArrayList<ArrayList<ArrayList<Integer>>> resultat = form.calculerEpaisseur(req);
+			if (form.getErreurs().isEmpty()) {
+				req.setAttribute(ATT_RESULT, resultat);
+				req.setAttribute(ATT_CHARGE, req.getParameter(ATT_CHARGE));
+				req.setAttribute(ATT_PORTEE, req.getParameter(ATT_PORTEE));
+				this.getServletContext().getRequestDispatcher("/WEB-INF/epaisseurResultat.jsp").forward(req, resp);
+			}
+			else {
+				req.setAttribute(ATT_ERROR, form.getErreurs());
+				this.getServletContext().getRequestDispatcher("/WEB-INF/epaisseur.jsp").forward(req, resp);
+			}
 		}
 	}
 

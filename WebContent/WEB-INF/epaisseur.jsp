@@ -127,14 +127,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3>La portée :<br></h3>
 			<div class="row">
 				<div class="col-md-6 styled-input">
-					<input type="text" name="portee" placeholder="0" >
+				<span class="erreur">${erreur['erreur_portee']}</span>
+					<input type="text" name="portee" placeholder="Ex : 7.9" required>
+					<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
 				</div> 
 			</div>
 			<div class="click text-center mt-3">
-				<input type="submit" name ="calcul" value="Afficher résultat">	
+				<input type="submit" name ="calcul" value="Afficher résultat">
 			</div>
 		</form>
-		<h3>${resultat}</h3>
 	</div>
 </section>
 <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">

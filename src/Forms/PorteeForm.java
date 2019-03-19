@@ -48,12 +48,10 @@ public class PorteeForm {
 		resultat.add(isostatiqueJumelleDao.calculerPortee(epaisseurX, epaisseurY, numeroCharge));
 		resultat.add(continueSimpleDao.calculerPortee(epaisseurX, epaisseurY, numeroCharge));
 		resultat.add(continueJumelleDao.calculerPortee(epaisseurX, epaisseurY, numeroCharge));
-		System.out.println(isostatiqueSimpleDao.calculerPortee(epaisseurX, epaisseurY, numeroCharge));
-		System.out.println(isostatiqueJumelleDao.calculerPortee(epaisseurX, epaisseurY, numeroCharge));
-		System.out.println(continueSimpleDao.calculerPortee(epaisseurX, epaisseurY, numeroCharge));
-		System.out.println(continueJumelleDao.calculerPortee(epaisseurX, epaisseurY, numeroCharge));
+		resultat.add((float) epaisseurX);
+		resultat.add((float) epaisseurY);
 		
-	
+		
 		// Bunch of sql querys like isostatiquesimple(epaisseurx,epaisseury,numerocharge)
 		
 		

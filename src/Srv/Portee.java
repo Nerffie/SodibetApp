@@ -28,6 +28,7 @@ public class Portee extends HttpServlet {
 	public static final String ATT_NEXT = "next";
 	public static final String CONF_DAO_FACTORY = "daofactory";
 	public static final String ATT_RESULT ="resultat";
+	public static final String ATT_CHARGE ="charge";
     
 	private IsostatiqueSimpleDao      isostatiqueSimpleDao;
 	private IsostatiqueJumelleDao      isostatiqueJumelleDao;
@@ -77,6 +78,7 @@ public class Portee extends HttpServlet {
 		if(req.getParameter(ATT_CALCUL)!=null) {
 			ArrayList<Float> resultat = new PorteeForm(isostatiqueSimpleDao, isostatiqueJumelleDao, continueSimpleDao, continueJumelleDao).calculerPortee(req);
 			req.setAttribute(ATT_RESULT, resultat);
+			req.setAttribute(ATT_CHARGE, req.getParameter(ATT_CHARGE));
 			this.getServletContext().getRequestDispatcher("/WEB-INF/porteeResultat.jsp").forward(req, resp);
 		}
 	}

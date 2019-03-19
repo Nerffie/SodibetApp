@@ -2,6 +2,8 @@ package Forms;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -15,12 +17,13 @@ public class EpaisseurForm {
 	
 	private static final String CHAMP_CHARGE  = "charge";
 	private static final String CHAMP_PORTEE  = "portee";
+	private static final String CHAMP_ERROR_PORTEE = "erreur_portee";
 
 	private IsostatiqueSimpleDao      isostatiqueSimpleDao;
 	private IsostatiqueJumelleDao      isostatiqueJumelleDao;
 	private ContinueSimpleDao      continueSimpleDao;
 	private ContinueJumelleDao      continueJumelleDao;
-	
+	private Map<String, String> erreurs      = new HashMap<String, String>();
 	private ArrayList<ArrayList<ArrayList<Integer>>> resultat;
 
 	public EpaisseurForm(IsostatiqueSimpleDao isostatiqueSimpleDao, IsostatiqueJumelleDao isostatiqueJumelleDao,
@@ -37,26 +40,21 @@ public class EpaisseurForm {
 	public ArrayList<ArrayList<ArrayList<Integer>>> calculerEpaisseur(HttpServletRequest request){
 		
 		String charge = getValeurChamp( request, CHAMP_CHARGE );
-	    float portee = Float.parseFloat(getValeurChamp(request, CHAMP_PORTEE));
+    	
+	    try {
+	    	float portee = Float.parseFloat(getValeurChamp(request, CHAMP_PORTEE));
+	    
 		int numeroCharge = chargeColumn(charge);
-		System.out.println("portee: "+portee+", charge "+numeroCharge);
-		System.out.println("1ere table " +isostatiqueSimpleDao.calculerEpaisseur(portee, numeroCharge));
-		System.out.println("2eme table "+ isostatiqueJumelleDao.calculerEpaisseur(portee, numeroCharge));
-		System.out.println("3eme table " + continueSimpleDao.calculerEpaisseur(portee, numeroCharge));
-		System.out.println("4eme table " +continueJumelleDao.calculerEpaisseur(portee, numeroCharge));
+		
 		resultat.add(isostatiqueSimpleDao.calculerEpaisseur(portee, numeroCharge));
 		resultat.add(isostatiqueJumelleDao.calculerEpaisseur(portee, numeroCharge));
 		resultat.add(continueSimpleDao.calculerEpaisseur(portee, numeroCharge));
 		resultat.add(continueJumelleDao.calculerEpaisseur(portee, numeroCharge));
-		//resultat[0]=isostatiqueSimpleDao.calculerEpaisseur(portee, numeroCharge);
-		//resultat[1]=isostatiqueJumelleDao.calculerEpaisseur(portee, numeroCharge);
-		//resultat[2]=continueSimpleDao.calculerEpaisseur(portee, numeroCharge);
-		//resultat[3]=continueJumelleDao.calculerEpaisseur(portee, numeroCharge);
-		
-	
 		// Bunch of sql querys like isostatiquesimple(epaisseurx,epaisseury,numerocharge)
-		
-		
+	    }
+	    catch(NumberFormatException e) {
+    		setErreur( CHAMP_ERROR_PORTEE, "Entrer un nombre valide" );
+    	}
 		return resultat;
 	}
 	
@@ -69,6 +67,8 @@ public class EpaisseurForm {
 	    }
 	}
 	
+
+	
 	private int chargeColumn(String charge) {
 		switch (charge) {
     	case "150": return 0; 
@@ -79,6 +79,13 @@ public class EpaisseurForm {
     	case "100/T": return 5; 
     }
 		return 0;
+	}
+	
+	private void setErreur( String champ, String message ) {
+	    erreurs.put( champ, message );
+	}
+	public Map<String, String> getErreurs() {
+	    return erreurs;
 	}
 
 }

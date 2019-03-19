@@ -1,4 +1,5 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +37,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- google fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 	<!-- //google fonts -->
-	
+	<style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+</style>
 </head>
 
 <body>
@@ -101,13 +124,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	</div>
 	<!-- //banner -->
-	
+
+
 </header>
+<h3 class="text-center">Charge : ${charge} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Epaisseur : <fmt:formatNumber value="${resultat.get(4)}" minFractionDigits="0" maxFractionDigits="0"/> +<fmt:formatNumber value="${resultat.get(5)}" minFractionDigits="0" maxFractionDigits="0"/></h3>
 <section class="contact py-5" id="contact">
 
 	<div class="container py-lg-3">
 
-		<h3>${resultat}</h3>
+				<table id="t01">
+  <tr>
+    <th>Travées</th>
+    <th>Poutrelles</th> 
+    <th>Portée</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Isostatique</td>
+    <td>Simple</td>
+    <td> ${resultat.get(0)}</td>
+  </tr>
+  <tr>
+    <td>Jumelle</td>
+    <td>${resultat.get(1) }</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Continue</td>
+    <td>Simple</td>
+    <td>${resultat.get(2) }</td>
+  </tr>
+   <tr>
+    
+    <td>Jumelle</td>
+    <td>${resultat.get(3) }</td>
+  </tr>
+</table>
+<div class="click text-center mt-3">
+				<a href="Portee"><button type="button" class="btn btn-primary">Retour</button></a>
+			</div>
+			
 	</div>
 </section>
 <!-- //contact -->

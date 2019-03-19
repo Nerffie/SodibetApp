@@ -36,7 +36,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- google fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 	<!-- //google fonts -->
-	
+	<style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+</style>
 </head>
 
 <body>
@@ -103,15 +125,167 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //banner -->
 	
 </header>
+<h3 class="text-center">Charge : ${charge} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portee : ${portee}</h3>
 <section class="contact py-5" id="contact">
 
 	<div class="container py-lg-3">
 
-		<h3>${resultat}</h3>
+				<table id="t01">
+  <tr>
+    <th>Travées</th>
+    <th>Poutrelles</th> 
+    <th>Epaisseur</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Isostatique</td>
+    <td>Simple</td>
+    
+    <td>
+    <c:choose>
+	    <c:when test="${empty resultat.get(0)}">
+	        Aucune valeur
+	    </c:when>    
+	    <c:otherwise>
+	         ${resultat.get(0).get(0).get(0)} &nbsp;+&nbsp; ${resultat.get(0).get(0).get(1)}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-plus-square"></i></a> 
+	    </c:otherwise>
+	</c:choose>
+	</td>
+  
+    
+  </tr>
+  <tr>
+    <td>Jumelle</td>
+    <td>
+    <c:choose>
+	    <c:when test="${empty resultat.get(1)}">
+	        Aucune valeur
+	    </c:when>    
+	    <c:otherwise>
+	         ${resultat.get(1).get(0).get(0)} &nbsp;+&nbsp; ${resultat.get(1).get(0).get(1)}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter2" role="button"><i class="fas mr-2 fa-plus-square"></i></a> 
+	    </c:otherwise>
+	</c:choose>
+	</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Continue</td>
+    <td>Simple</td>
+    <td>
+    <c:choose>
+	    <c:when test="${empty resultat.get(2)}">
+	        Aucune valeur
+	    </c:when>    
+	    <c:otherwise>
+	         ${resultat.get(2).get(0).get(0)} &nbsp;+&nbsp; ${resultat.get(2).get(0).get(1)}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter3" role="button"><i class="fas mr-2 fa-plus-square"></i></a> 
+	    </c:otherwise>
+	</c:choose>
+	</td>
+  </tr>
+   <tr>
+    
+    <td>Jumelle</td>
+    <td>
+    <c:choose>
+	    <c:when test="${empty resultat.get(3)}">
+	        Aucune valeur
+	    </c:when>    
+	    <c:otherwise>
+	         ${resultat.get(3).get(0).get(0)} &nbsp;+&nbsp; ${resultat.get(3).get(0).get(1)}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-plus-square"></i></a> 
+	    </c:otherwise>
+	</c:choose>
+	</td>
+  </tr>
+</table>
+<div class="click text-center mt-3">
+				<a href="Epaisseur"><button type="button" class="btn btn-primary">Retour</button></a>
+			</div>
+			
 	</div>
-</section>
 <!-- //contact -->
+</section>
 <!-- //header -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Autres résultats</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<c:forEach var="table1" items="${resultat.get(0)}" begin="1">
+        			<c:out value="${table1.get(0)} + ${table1.get(1) }" /><br>
+				</c:forEach>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Autres résultats</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<c:forEach var="table2" items="${resultat.get(1)}" begin="1">
+        			<c:out value="${table2.get(0)} + ${table2.get(1) }" /><br>
+				</c:forEach>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Autres résultats</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<c:forEach var="table3" items="${resultat.get(2)}" begin="1">
+        			<c:out value="${table3.get(0)} + ${table3.get(1) }" /><br>
+				</c:forEach>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Autres résultats</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<c:forEach var="table4" items="${resultat.get(3)}" begin="1">
+        			<c:out value="${table4.get(0)} + ${table4.get(1) }" /><br>
+				</c:forEach>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 
     <!-- js -->
