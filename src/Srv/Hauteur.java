@@ -1,6 +1,8 @@
 package Srv;
 
 import java.io.IOException;
+
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -11,14 +13,22 @@ import Beans.Utilisateur;
 import Dao.DAOFactory;
 import Dao.UtilisateurDao;
 import Forms.DontShow;
+import Forms.HauteurForm;
+
 
 
 public class Hauteur extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public static final String ATT_USER = "utilisateur";
 	public static final String ATT_DONT_SHOW = "dontShow";
+	public static final String ATT_CALCUL = "calcul";
 	public static final String ATT_NEXT = "next";
+	private static final String ATT_ERROR = "erreur";
+	public static final String ATT_RESULT = "resultat";
 	public static final String CONF_DAO_FACTORY = "daofactory";
+	private static final String ATT_HSPB  = "hspb";
+	private static final String ATT_FP  = "fp";
+	private static final String ATT_GAINE = "gaine";
     
 	
 	private UtilisateurDao utilisateurDao;
@@ -60,6 +70,21 @@ public class Hauteur extends HttpServlet {
 			this.getServletContext().getRequestDispatcher("/WEB-INF/hauteur.jsp").forward(req, resp);
 			//update la table pour mettre portee 1 à 1
 			
+		}
+		if(req.getParameter(ATT_CALCUL)!=null) {
+			HauteurForm form = new HauteurForm();
+			float resultat = form.calculerHauteur(req);
+			if (form.getErreurs().isEmpty()) {
+				req.setAttribute(ATT_RESULT, resultat);
+				req.setAttribute(ATT_GAINE, req.getParameter(ATT_GAINE));
+				req.setAttribute(ATT_HSPB, req.getParameter(ATT_HSPB));
+				req.setAttribute(ATT_FP, req.getParameter(ATT_FP));
+				this.getServletContext().getRequestDispatcher("/WEB-INF/hauteurResultat.jsp").forward(req, resp);
+			}
+			else {
+				req.setAttribute(ATT_ERROR, form.getErreurs());
+				this.getServletContext().getRequestDispatcher("/WEB-INF/hauteur.jsp").forward(req, resp);
+			}
 		}
 	}
 

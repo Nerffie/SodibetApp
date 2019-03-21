@@ -1,13 +1,16 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Litrage</title>
+<title>Hauteur</title>
 <!-- for-mobile-apps -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Landing Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
 
     <script>
         addEventListener("load", function () {
@@ -18,6 +21,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             window.scrollTo(0, 1);
         }
     </script>
+
 	
 	<!-- animation css files -->
 	<link rel="stylesheet" href="inc/css/animation-aos.css">
@@ -33,8 +37,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- google fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 	<!-- //google fonts -->
-	
+<style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+</style>
+
 </head>
+
 <body>
 
 <!-- header -->
@@ -90,69 +118,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner layer" id="home">
 		<div class="container">
 			<div class="row banner-text">
-				  <div class="slider-info col-lg-8">
-					<div class="agileinfo-logo mt-5">
-					</div>
-					<h3 class="txt-w3_agile" data-aos="fade-down">Calcul de litrage</h3>
+				<div class=" col-lg-8">
+					<h3 class="txt-w3_agile" data-aos="fade-down">Hauteur de sous plafond</h3>
 				</div>
-			</div>
 		</div>
-		
-		
-		
+	</div>
 	</div>
 	<!-- //banner -->
+
+
 </header>
 <section class="contact py-5" id="contact">
+
 	<div class="container py-lg-3">
-		<form action="#" method="post" data-aos="fade-up">
-			<div class="row">
-				<div class="col-md-6 styled-input mt-0">
-				<h3>Epaisseur de dalle :<br></h3>
-					<input type="text" name="epaisseur" placeholder="Centimètre" required>
-				</div>
+<table id="t01">
+  <tr>
+    <th>HSPb</th>
+    <th>Gaine</th> 
+    <th>Faux-plafond</th>
+    <th>HSPn</th>
+  </tr>
+  <tr>
+    <td>${hspb}</td>
+    <td> ${gaine}</td>
+    <td>${fp}</td>
+    <td>${resultat}</td>
+  </tr>
+</table>
+*Hors revêtement
 				
-				<div class="col-md-6 styled-input mt-md-0">
-				<h3>Superficie de dalle :<br></h3>
-				<input type="text" name="superficie" placeholder="Mètre carré" required>
-				</div> 
+<div class="click text-center mt-3">
+				<a href="Hauteur"><button type="button" class="btn btn-primary">Retour</button></a>
 			</div>
-			<br>	
 			
-			<div class="row">
-				<div class="col-md-6 styled-input">
-					<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
-				<span class="erreur">${erreur['erreur']}</span>
-				</div>
-				
-			</div>
-			<div class="click text-center mt-3">
-				<input type="submit" name ="calcul" value="Afficher résultat">
-			</div>
-		</form>
 	</div>
 </section>
+<!-- //contact -->
 <!-- //header -->
-<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Explication</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				Brève Explication sur ce que c'est le litrage
-			</div>
-			<div class="modal-footer">
-			<form method="post" action="#"><input type="submit" class ="btn btn-primary" name="dontShow" value="Ne plus afficher">
-					</form>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-			</div>
-		</div>
-	</div>
-</div>
+
 
     <!-- js -->
     <script src="inc/js/jquery-2.2.3.min.js"></script>
@@ -193,7 +196,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     </script>
     <!-- //testimonials  Responsiveslides -->
-<c:if test="${utilisateur.getPortee_4()==0}">
+
+<c:if test="${utilisateur.getPortee_1()==0}">
 <script>
    
     $(document).ready(function() {
@@ -201,6 +205,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     	});
 </script>
 </c:if>
+
+
+
 	<!-- sticky nav bar-->
 	<script>
 		$(() => {

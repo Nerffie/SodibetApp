@@ -11,6 +11,7 @@ import Beans.Utilisateur;
 import Dao.DAOFactory;
 import Dao.UtilisateurDao;
 import Forms.DontShow;
+import Forms.LitrageForm;
 
 
 public class Litrage extends HttpServlet {
@@ -18,7 +19,13 @@ public class Litrage extends HttpServlet {
 	public static final String ATT_USER = "utilisateur";
 	public static final String ATT_DONT_SHOW = "dontShow";
 	public static final String ATT_NEXT = "next";
+	public static final String ATT_CALCUL = "calcul";
 	public static final String CONF_DAO_FACTORY = "daofactory";
+	private static final String ATT_ERROR = "erreur";
+	public static final String ATT_RESULT = "resultat";
+	public static final String ATT_EPAISSEUR = "epaisseur";
+	public static final String ATT_SUPERFICIE = "superficie";
+	
     
 	
 	private UtilisateurDao utilisateurDao;
@@ -57,6 +64,21 @@ public class Litrage extends HttpServlet {
 			new DontShow(utilisateurDao,4,utilisateur).nePlusAfficher();
 			this.getServletContext().getRequestDispatcher("/WEB-INF/litrage.jsp").forward(req, resp);
 			//update la table pour mettre portee 1 à 1
+		}
+		if(req.getParameter(ATT_CALCUL)!=null) {
+			LitrageForm form = new LitrageForm();
+			float resultat = form.calculerLitrage(req);
+			if (form.getErreurs().isEmpty()) {
+				req.setAttribute(ATT_RESULT, resultat);
+				req.setAttribute(ATT_EPAISSEUR, req.getParameter(ATT_EPAISSEUR));
+				req.setAttribute(ATT_SUPERFICIE, req.getParameter(ATT_SUPERFICIE));
+				
+				this.getServletContext().getRequestDispatcher("/WEB-INF/litrageResultat.jsp").forward(req, resp);
+			}
+			else {
+				req.setAttribute(ATT_ERROR, form.getErreurs());
+				this.getServletContext().getRequestDispatcher("/WEB-INF/litrage.jsp").forward(req, resp);
+			}
 		}
 		
 	}
