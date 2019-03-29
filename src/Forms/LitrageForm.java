@@ -24,7 +24,7 @@ public class LitrageForm {
 	    try {
 	    	float epaisseur = Float.parseFloat(getValeurChamp(request, CHAMP_EPAISSEUR));
 	    	float superficie = Float.parseFloat(getValeurChamp(request, CHAMP_SUPERFICIE));
-	    		resultat = epaisseur*100*superficie;
+	    		resultat = (epaisseur/100)*superficie;
 	    	
 	    }	
 	    	catch(NumberFormatException e) {
