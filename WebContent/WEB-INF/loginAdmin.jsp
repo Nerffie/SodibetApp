@@ -74,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<br>
 					<form action="#" class="mt-4" method="post">
 						
-						<input class="form-control" type="text" name="id" placeholder="ADMIN ID" required />
+						<input class="form-control" type="text" name="id" placeholder="Admin ID" required />
 						<span class="erreur">${form.erreurs['id']}</span>
 						
 						<input class="form-control" type="password" name="password" placeholder="Mot de passe" required/>

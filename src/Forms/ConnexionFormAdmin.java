@@ -46,11 +46,8 @@ public class ConnexionFormAdmin {
 	    if ( erreurs.isEmpty() ) {
 	    	admin = adminDao.trouver(id);
 	        resultat = "Succès de login.";
-	        System.out.println("emmpty form");
-	        
 	    } else {
 	        resultat = "Échec de login. ";
-	        System.out.println("not so empty form");
 	    }
 	    return admin;
 	}
@@ -60,10 +57,13 @@ public class ConnexionFormAdmin {
 	private void traiterLogin(String id, String motDePasse, Admin admin) {
 		traiterId(id, admin);//Vérification de l'existence du mail + set admin son mail
 		if(erreurs.isEmpty()) {// id existe
-			System.out.println("id existe");
+			//System.out.println("id existe");
 			traiterMotsDePasse(motDePasse,id,admin);//Comparaison des 2 mots de passe
 		}
-		
+//		System.out.println("i skipped the part");
+//		System.out.println(erreurs.get(CHAMP_ID));
+//		System.out.println(erreurs.size());
+//		System.out.println(erreurs.values());
 			
 		
 	}
@@ -80,7 +80,6 @@ public class ConnexionFormAdmin {
 	    passwordEncryptor.setAlgorithm( ALGO_CHIFFREMENT );
 	    passwordEncryptor.setPlainDigest( false );
 	    String motDePasseHash = adminDao.getPass(id);
-	    System.out.println(motDePasseHash);
 	     if(!passwordEncryptor.checkPassword(motDePasse, motDePasseHash)) {
 	    	 throw new Exception("Le mot de passe n'est pas correct");
 	     }

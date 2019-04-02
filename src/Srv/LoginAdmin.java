@@ -8,11 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import Beans.Admin;
-import Beans.Utilisateur;
+
 import Dao.AdminDao;
 import Dao.DAOFactory;
-import Dao.UtilisateurDao;
-import Forms.ConnexionForm;
 import Forms.ConnexionFormAdmin;
 
 

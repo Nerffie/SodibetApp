@@ -4,8 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-
 import Dao.DAOUtilitaire;
 import Beans.Admin;
 
@@ -29,7 +27,7 @@ public class AdminDaoImpl implements AdminDao {
     	Connection connexion = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
-        Admin admin = null;
+        Admin admin = new Admin();
         try {
 
             /* Récupération d'une connexion depuis la Factory */
