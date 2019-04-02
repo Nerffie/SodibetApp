@@ -13,6 +13,14 @@
     <url-pattern>/Home</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>Srv.Test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>Contact</servlet-name>
     <servlet-class>Srv.Contact</servlet-class>
   </servlet>
@@ -21,12 +29,20 @@
     <url-pattern>/Contact</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>About</servlet-name>
-    <servlet-class>Srv.About</servlet-class>
+    <servlet-name>Ask</servlet-name>
+    <servlet-class>Srv.Ask</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>About</servlet-name>
-    <url-pattern>/About</url-pattern>
+    <servlet-name>Ask</servlet-name>
+    <url-pattern>/Ask</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Hypot</servlet-name>
+    <servlet-class>Srv.Hypot</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hypot</servlet-name>
+    <url-pattern>/Hypotheses</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>Login</servlet-name>
@@ -35,6 +51,14 @@
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
     <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>LoginAdmin</servlet-name>
+    <servlet-class>Srv.LoginAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginAdmin</servlet-name>
+    <url-pattern>/LoginAdmin</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>SignUp</servlet-name>
