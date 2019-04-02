@@ -65,13 +65,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
              <li>
-            <a href="#" class="active">Hypothéses</a>
+            <a href="Hypotheses" class="active">Hypothéses</a>
           </li>
              <li>
-            <a href="#" class="active">Posez une question</a>
+            <a href="Ask" class="active">Posez une question</a>
           </li>
           <li>
-            <a href="#" class="active">Contact</a>
+            <a href="Contact" class="active">Contact</a>
           </li>
              <li>
             <a href="#" class="active">Plaquette</a>
