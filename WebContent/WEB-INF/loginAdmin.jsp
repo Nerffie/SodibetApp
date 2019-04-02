@@ -1,8 +1,7 @@
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Litrage</title>
+<title>Connectez-vous</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -61,98 +60,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="bar"></div>
           </div>
         </div>
-        <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
-          <li>
-            <a href="Predimensionnement" class="active">Prédimensionnement</a>
-          </li>
-             <li>
-            <a href="Hypotheses" class="active">Hypothéses</a>
-          </li>
-             <li>
-            <a href="Ask" class="active">Posez une question</a>
-          </li>
-          <li>
-            <a href="Contact" class="active">Contact</a>
-          </li>
-             <li>
-            <a href="#" class="active">Plaquette</a>
-          </li>
-          <li>
-            <a href="Logout"><button  type="button" class="btn btn-secondary" >
-              Log out
-            </button></a>
-          </li>
-        </ul>
       </div>
     </nav>
     <!-- //nav -->
 	<!-- banner -->
 	<div class="banner layer" id="home">
 		<div class="container">
-			<div class="row banner-text">
-				  <div class="slider-info col-lg-8">
-					<div class="agileinfo-logo mt-5">
-					</div>
-					<h3 class="txt-w3_agile" data-aos="fade-down">Calcul de litrage</h3>
+			<div class="row banner-text" >
+				<div class="col-lg-4 col-md-2 mt-lg-0 mt-5 banner-form" data-aos="fade-right"></div>
+				<div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
+				<br>
+					<h5><i class="fas mr-2 fa-laptop"></i>Administration !</h5>
+					<br>
+					<form action="#" class="mt-4" method="post">
+						
+						<input class="form-control" type="text" name="id" placeholder="ADMIN ID" required />
+						<span class="erreur">${form.erreurs['id']}</span>
+						
+						<input class="form-control" type="password" name="password" placeholder="Mot de passe" required/>
+						<span class="erreur">${form.erreurs['password']}</span>
+						<input class="form-control text-capitalize" type="submit" value="Connexion">
+					</form>
+					
+						<br><br><br><br><br><br>
 				</div>
 			</div>
 		</div>
-		
-		
-		
 	</div>
 	<!-- //banner -->
+
 </header>
-<section class="contact py-5" id="contact">
-	<div class="container py-lg-3">
-		<form action="#" method="post" data-aos="fade-up">
-			<div class="row">
-				<div class="col-md-6 styled-input mt-0">
-				<h3>Epaisseur de dalle :<br></h3>
-					<input type="text" name="epaisseur" placeholder="Centimètre" required>
-				</div>
-				
-				<div class="col-md-6 styled-input mt-md-0">
-				<h3>Superficie de dalle :<br></h3>
-				<input type="text" name="superficie" placeholder="Mètre carré" required>
-				</div> 
-			</div>
-			<br>	
-			
-			<div class="row">
-				<div class="col-md-6 styled-input">
-					<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
-				<span class="erreur">${erreur['erreur']}</span>
-				</div>
-				
-			</div>
-			<div class="click text-center mt-3">
-				<input type="submit" name ="calcul" value="Afficher résultat">
-			</div>
-		</form>
-	</div>
-</section>
 <!-- //header -->
-<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Explication</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				Brève Explication sur ce que c'est le litrage
-			</div>
-			<div class="modal-footer">
-			<form method="post" action="#"><input type="submit" class ="btn btn-primary" name="dontShow" value="Ne plus afficher">
-					</form>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-			</div>
-		</div>
-	</div>
-</div>
 
     <!-- js -->
     <script src="inc/js/jquery-2.2.3.min.js"></script>
@@ -193,14 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     </script>
     <!-- //testimonials  Responsiveslides -->
-<c:if test="${utilisateur.getPortee_4()==0}">
-<script>
-   
-    $(document).ready(function() {
-    	  $('#exampleModalCenter1').modal('show');
-    	});
-</script>
-</c:if>
+
 	<!-- sticky nav bar-->
 	<script>
 		$(() => {

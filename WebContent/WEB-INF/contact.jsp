@@ -62,15 +62,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
           <li>
-            <a href="About" class="active">A Propos</a>
+            <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
-          
+             <li>
+            <a href="Hypotheses" class="active">Hypothéses</a>
+          </li>
+             <li>
+            <a href="Ask" class="active">Posez une question</a>
+          </li>
           <li>
             <a href="Contact" class="active">Contact</a>
           </li>
+             <li>
+            <a href="#" class="active">Plaquette</a>
+          </li>
           <li>
-            <a href="Login"><button  type="button" class="btn w3ls-btn" >
-              Login
+            <a href="Logout"><button  type="button" class="btn btn-secondary" >
+              Log out
             </button></a>
           </li>
         </ul>

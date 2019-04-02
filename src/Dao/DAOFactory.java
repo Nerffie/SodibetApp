@@ -101,6 +101,10 @@ public class DAOFactory {
         return new UtilisateurDaoImpl( this );
     }
     
+    public AdminDao getAdminDao() {
+        return new AdminDaoImpl( this );
+    }
+    
     public IsostatiqueSimpleDao getIsostatiqueSimpleDao() {
     	return new IsostatiqueSimpleDaoImpl(this);
     }

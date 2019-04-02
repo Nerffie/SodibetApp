@@ -1,8 +1,8 @@
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Litrage</title>
+<title>Question</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -85,75 +85,49 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </ul>
       </div>
     </nav>
+    </header>
     <!-- //nav -->
+
 	<!-- banner -->
 	<div class="banner layer" id="home">
 		<div class="container">
-			<div class="row banner-text">
-				  <div class="slider-info col-lg-8">
-					<div class="agileinfo-logo mt-5">
-					</div>
-					<h3 class="txt-w3_agile" data-aos="fade-down">Calcul de litrage</h3>
-				</div>
+			<!-- banner bottom -->
 			</div>
-		</div>
+
+<section class="banner-bottom py-5">
+</div><div class="container py-md-3">
+		
+		<br><br>
 		
 		
-		
-	</div>
-	<!-- //banner -->
-</header>
+		<!-- contact -->
 <section class="contact py-5" id="contact">
 	<div class="container py-lg-3">
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Get in touch</h3>
 		<form action="#" method="post" data-aos="fade-up">
 			<div class="row">
-				<div class="col-md-6 styled-input mt-0">
-				<h3>Epaisseur de dalle :<br></h3>
-					<input type="text" name="epaisseur" placeholder="Centimètre" required>
+				<div class="col-md-12 styled-input mt-0">
+					<input type="text" name="sujet" placeholder="Sujet" required="">
 				</div>
 				
-				<div class="col-md-6 styled-input mt-md-0">
-				<h3>Superficie de dalle :<br></h3>
-				<input type="text" name="superficie" placeholder="Mètre carré" required>
-				</div> 
 			</div>
-			<br>	
-			
-			<div class="row">
-				<div class="col-md-6 styled-input">
-					<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
-				<span class="erreur">${erreur['erreur']}</span>
-				</div>
-				
+			<div class="styled-input">
+				<textarea name="message" placeholder="Message" required=""></textarea>
 			</div>
 			<div class="click text-center mt-3">
-				<input type="submit" name ="calcul" value="Afficher résultat">
+				<input type="submit" value="Submit">
 			</div>
 		</form>
 	</div>
 </section>
-<!-- //header -->
-<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Explication</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				Brève Explication sur ce que c'est le litrage
-			</div>
-			<div class="modal-footer">
-			<form method="post" action="#"><input type="submit" class ="btn btn-primary" name="dontShow" value="Ne plus afficher">
-					</form>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-			</div>
-		</div>
-	</div>
-</div>
+<!-- //contact -->
+		
+		
+		
+	
 
+
+</section>
     <!-- js -->
     <script src="inc/js/jquery-2.2.3.min.js"></script>
     <script src="inc/js/bootstrap.js"></script>
@@ -193,14 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     </script>
     <!-- //testimonials  Responsiveslides -->
-<c:if test="${utilisateur.getPortee_4()==0}">
-<script>
-   
-    $(document).ready(function() {
-    	  $('#exampleModalCenter1').modal('show');
-    	});
-</script>
-</c:if>
+
 	<!-- sticky nav bar-->
 	<script>
 		$(() => {

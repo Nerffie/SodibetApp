@@ -109,6 +109,15 @@
     <url-pattern>/Epaisseur</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>UsersData</servlet-name>
+    <servlet-class>Srv.UsersData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UsersData</servlet-name>
+    <url-pattern>/UsersData</url-pattern>
+  </servlet-mapping>
+  
     <servlet>
     <servlet-name>Hauteur</servlet-name>
     <servlet-class>Srv.Hauteur</servlet-class>

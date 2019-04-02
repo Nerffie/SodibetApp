@@ -70,13 +70,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
              <li>
-            <a href="#" class="active">Hypothéses</a>
+            <a href="Hypotheses" class="active">Hypothéses</a>
           </li>
              <li>
-            <a href="#" class="active">Posez une question</a>
+            <a href="Ask" class="active">Posez une question</a>
           </li>
           <li>
-            <a href="#" class="active">Contact</a>
+            <a href="Contact" class="active">Contact</a>
           </li>
              <li>
             <a href="#" class="active">Plaquette</a>
@@ -109,7 +109,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<form action="#" method="post" data-aos="fade-up">
 			<div class="row">
 				<div class="col-md-6 styled-input mt-0">
-				<h3>Charges d'exloitations (daN/m2)<br></h3>
+				<h3>Charges d'exloitations (daN/m²)<br></h3>
 					<select class="form-control" name="charge" required>
 						<option class="form-control" selected value="150">150
 						<option class="form-control" value="250">250
@@ -123,7 +123,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div> 
 			</div>
 			<br>	
-			<h3>L'épaisseur du plancher :<br></h3>
+			<h3>Epaisseur de la dalle de compression :<br></h3>
 			<div class="row">
 				<div class="col-md-6 styled-input">
 					<select class="form-control" name="epaisseurX" id="epaisseurX" onchange="epaisseur(this);" required>

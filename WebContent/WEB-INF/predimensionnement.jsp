@@ -65,13 +65,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
              <li>
-            <a href="#" class="active">Hypothéses</a>
+            <a href="Hypotheses" class="active">Hypothéses</a>
           </li>
              <li>
-            <a href="#" class="active">Posez une question</a>
+            <a href="Ask" class="active">Posez une question</a>
           </li>
           <li>
-            <a href="#" class="active">Contact</a>
+            <a href="Contact" class="active">Contact</a>
           </li>
              <li>
             <a href="#" class="active">Plaquette</a>
@@ -88,8 +88,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- banner -->
 	<div class="banner layer" id="home">
 		<div class="container">
+			<!-- banner bottom -->
+			<br>
+			</div>
+<!-- //banner -->
+<section class="banner-bottom py-5">
+</div><div class="container py-md-3">
+	</div>
+</header>
+<!--  <section class="contact py-5" id="contact"><div class="container py-lg-3">
+		
 			<div class="row banner-text">
-				  <div class="slider-info col-lg-8">
+				  <div class="">
 					<ul>
 					<li><a class="btn mt-4 text-capitalize" data-aos="fade-up" href="Portee"  role="button">Détermination de la portée limite par la flèche</a></li>
 					<li><a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="Epaisseur"  role="button">Détermination de l'épaisseur du plancher</a></li>
@@ -98,13 +108,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 				</div>
 			</div>
+		
+		
+		
+		
+	</div></section>-->
+	
+	<section class="choose py-5" id="choose">
+	<div class="container py-md-3">
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in">Fonctionnalités</h3>
+		<div class="feature-grids row">
+			<div class="col-lg-4 col-md-6" data-aos="fade-right">
+				<a href="Portee">
+				<div class="f1 icon1 p-4">
+					<i class="fab fa-bandcamp"></i>
+					<h3 class="my-3">Portée limite</h3>
+					<p>Détermination de la portée limite par la flèche</p>
+				</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6" data-aos="fade-up">
+				<a href="Epaisseur">
+				<div class="f1 icon2 p-4">
+					<i class="fab fa-bandcamp"></i>
+					<h3 class="my-3">Epaisseur du plancher</h3>
+					<p>Détermination de l'épaisseur du plancher</p>
+				</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-left">
+				<a href="Hauteur">
+				<div class="f1 icon3 p-4">
+					<i class="fab fa-bandcamp"></i>
+					<h3 class="my-3">Hauteur sous plafond</h3>
+					<p>Calcul de la hauteur sous plafond nette</p>
+				</div>
+				</a>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4 " data-aos="fade-left">
+				<a href="Litrage">
+				<div class="f1 icon2 p-4">
+					<i class="fab fa-bandcamp"></i>
+					<h3 class="my-3">Litrage</h3>
+					<p>Calcul du litrage</p>
+				</div>
+				</a>
+			</div>
 		</div>
-		
-		
-		
 	</div>
-	<!-- //banner -->
-</header>
+</section>
 <!-- //header -->
 
     <!-- js -->

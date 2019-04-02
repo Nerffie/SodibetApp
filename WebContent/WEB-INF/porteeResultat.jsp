@@ -93,13 +93,13 @@ table#t01 th {
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
              <li>
-            <a href="#" class="active">Hypothéses</a>
+            <a href="Hypotheses" class="active">Hypothéses</a>
           </li>
              <li>
-            <a href="#" class="active">Posez une question</a>
+            <a href="Ask" class="active">Posez une question</a>
           </li>
           <li>
-            <a href="#" class="active">Contact</a>
+            <a href="Contact" class="active">Contact</a>
           </li>
              <li>
             <a href="#" class="active">Plaquette</a>
@@ -144,7 +144,7 @@ table#t01 th {
     <td> ${resultat.get(0)}</td>
   </tr>
   <tr>
-    <td>Jumelle</td>
+    <td>jumelée</td>
     <td>${resultat.get(1) }</td>
   </tr>
   <tr>
@@ -154,7 +154,7 @@ table#t01 th {
   </tr>
    <tr>
     
-    <td>Jumelle</td>
+    <td>jumelée</td>
     <td>${resultat.get(3) }</td>
   </tr>
 </table>

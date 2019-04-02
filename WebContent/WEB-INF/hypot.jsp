@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>A propos</title>
+<title>Hypothèses</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -62,15 +62,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
           <li>
-            <a href="About" class="active">A Propos</a>
+            <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
-          
+             <li>
+            <a href="Hypotheses" class="active">Hypothéses</a>
+          </li>
+             <li>
+            <a href="Ask" class="active">Posez une question</a>
+          </li>
           <li>
             <a href="Contact" class="active">Contact</a>
           </li>
+             <li>
+            <a href="#" class="active">Plaquette</a>
+          </li>
           <li>
-            <a href="Login"><button  type="button" class="btn btn-secondary" >
-              Login
+            <a href="Logout"><button  type="button" class="btn btn-secondary" >
+              Log out
             </button></a>
           </li>
         </ul>
@@ -86,29 +94,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<br>		
 <section class="banner-bottom py-5">
 	</div><div class="container py-md-3">
-		
-		<br><br><br>
-		<h4 class="text-center" data-aos="zoom-in">Trusted by the world's best companies</h4>
-		<ul class="list-unstyled pt-5 partners-icon text-center">
-			<li data-aos="fade-up">
-				<i class="fab fa-supple clr1"></i>
-			</li>
-			<li data-aos="fade-up">
-				<i class="fab fa-aviato clr2"></i>
-			</li>
-			<li data-aos="fade-up">
-				<i class="fab fa-cpanel clr3"></i>
-			</li>
-			<li data-aos="fade-up">
-				<i class="fab fa-hooli clr4"></i>
-			</li>
-			<li data-aos="fade-up">
-				<i class="fab fa-supple clr5"></i>
-			</li>
-			<li data-aos="fade-up">
-				<i class="fab fa-aviato clr6"></i>
-			</li>
-		</ul>
 	</div>
 </section>
 <!-- //banner bottom -->
@@ -116,27 +101,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- why choose us -->
 <section class="choose py-5" id="choose">
 	<div class="container py-md-3">
-		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Why Choose Us</h3>
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Hypothèses</h3>
 		<div class="feature-grids row">
 			<div class="col-lg-4 col-md-6" data-aos="fade-right">
 				<div class="f1 icon1 p-4">
 					<i class="fab fa-bandcamp"></i>
-					<h3 class="my-3">Design & Branding</h3>
-					<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum.</p>
+					<h3 class="my-3">Matériaux</h3>
+					<p>Béton fc28 = 25 Mpa - Aciers Fe 500</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6" data-aos="fade-up">
 				<div class="f1 icon2 p-4">
-					<i class="fab fa-codepen"></i>
-					<h3 class="my-3">Safe & Secure</h3>
-					<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum.</p>
+					<i class="fab fa-bandcamp"></i>
+					<h3 class="my-3">Les calculs</h3>
+					<p>Les calculs sont menés suivant les règles BAEL 91 modifié 99 et CPT Plancher 96</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-left">
 				<div class="f1 icon3 p-4">
-					<i class="fab fa-bitcoin"></i>
-					<h3 class="my-3">Fresh Interfaces</h3>
-					<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum.</p>
+					<i class="fab fa-bandcamp"></i>
+					<h3 class="my-3">Les sollicitations</h3>
+					<p>Les sollicitations dans les calculs de continuité sont déterminées par la méthode CAQUOT minorée</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-left">
+				<div class="f1 icon1 p-4">
+					<i class="fab fa-bandcamp"></i>
+					<h3 class="my-3">Mode</h3>
+					<p>Mode F.P.P.</p>
 				</div>
 			</div>
 		</div>
