@@ -37,7 +37,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 
 <!-- header -->
-<header class="index-banner" id = "mheader">
+<header class="index-banner">
     <!-- nav -->
     <nav class="main-header">
       <div id="brand" data-aos="zoom-in-up">
@@ -85,79 +85,115 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 	<br>		
 <section class="banner-bottom py-5">
-	</div><!--footer -->
-<footer>
-<section class="footer footer_w3layouts_section_1its py-5">
-	<div class="container py-md-4">
-	<div class="footer-grid_section text-center" data-aos="zoom-in">
-				<div class="footer-title mb-3">
-					<a href="#"><i class="fab fa-blackberry mr-2"></i> SODIBET</a>
+	</div><div class="container py-md-3">
+		
+		<br><br>
+		
+		
+		<!-- contact -->
+<section class="contact py-5" id="contact">
+	<div class="container py-lg-3">
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Get in touch</h3>
+		<form action="#" method="post" data-aos="fade-up">
+			<div class="row">
+				<div class="col-md-6 styled-input mt-0">
+					<input type="text" name="Name" placeholder="First Name" required="">
 				</div>
-				<div class="footer-text">
-					<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat.
-					 Lorem ipsum dolor sit amet, consectetur elit.</p>
+				<div class="col-md-6 styled-input mt-md-0">
+					<input type="text" name="Name" placeholder="Last Name" required="">
+				</div> 
+			</div>
+			<div class="row">
+				<div class="col-md-6 styled-input">
+					<input type="email" name="Email" placeholder="Email" required=""> 
 				</div>
-				<ul class="social_section_1info">
-					<li class="mb-2 facebook"><a href="#"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
-					<li class="mb-2 twitter"><a href="#"><i class="fab mr-1 fa-twitter"></i>twitter</a></li>
-					<li class="google"><a href="#"><i class="fab mr-1 fa-google-plus-g"></i>google</a></li>
-					<li class="linkedin"><a href="#"><i class="fab mr-1 fa-linkedin-in"></i>linkedin</a></li>
+				<div class="col-md-6 styled-input">
+					<input type="text" name="phone" placeholder="Phone Number" required="">
+				</div> 
+			</div>
+			<div class="styled-input">
+				<textarea name="Message" placeholder="Message" required=""></textarea>
+			</div>
+			<div class="click text-center mt-3">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+</section>
+<!-- //contact -->
+		
+		
+		
+		<!-- faqs -->
+<section class="faq-w3l py-5" id="faq">
+	<div class="container py-lg-3">
+	<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Frequently Asked Questions</h3>
+		<div class="row faq-info">
+			<div class=" col-md-6 faq-w3agile">
+				<ul class="faq pl-sm-4 pl-3">
+					<li class="item1 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item2 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item3 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
 				</ul>
 			</div>
-			
-		<div class="row footer-top mt-md-5 mt-4">
-			<div class="col-lg-4 col-md-6 footer-grid_section_1its_w3" data-aos="fade-right">
-				<div class="footer-title">
-					<h3 style=" position: relative;left: 230px">Contact</h3>
-				</div>
-				<div class="footer-text">
-					<p>Address : 1234 lock, Charlotte, North Carolina, United States</p>
-					<p>Phone : +12 534894364</p>
-					
-				</div>
+			<div class=" col-md-6 faq-w3agile">
+				<ul class="faq pl-sm-4 pl-3">
+					<li class="item5 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item6 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item7 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
-			<div class="col-lg-4 col-md-12 mt-lg-0 mt-4 col-sm-12 footer-grid_section_1its_w3" data-aos="fade-left">
-				<div class="footer-title">
-					<h3><br></h3>
-				</div>
-				<div class="footer-text">
-					<p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
-					<p>Fax : +12 534894364</p>
-					
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 mt-md-0 mt-4 footer-grid_section_1its_w3" data-aos="fade-up">
-				<div class="footer-title">
-					<h3>Quick links</h3>
-				</div>
-				<div class="row">
-					
-					<ul class="col-6 links">
-						<li><a href="Login" >Login</a></li>
-						<li><a href="#contact" class="scroll">Contact </a></li>
-					</ul>
-					<ul class="col-6 links">
-						
-						
-						
-					<li><a href="Home" >Home </a></li>
-					
-					</ul>
-				</div>
-			</div>
-			
 		</div>
 	</div>
 </section>
-</footer>
-<!-- //footer -->
-
-<!-- copyright -->
-<div class="cpy-right text-center py-3">
-	<p class="">© 2019 SODIBET. All rights reserved 
-	</p>
-</div>
-<!-- //copyright -->
 <!-- //faqs -->
 
 

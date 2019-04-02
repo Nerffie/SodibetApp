@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-public class Hypot extends HttpServlet {
+public class About extends HttpServlet {
 	
 	/**
 	 * 
@@ -17,7 +17,7 @@ public class Hypot extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		this.getServletContext().getRequestDispatcher("/WEB-INF/hypot.jsp").forward(req, resp);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/contact.jsp").forward(req, resp);
 	}
 	
 
