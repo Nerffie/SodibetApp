@@ -207,6 +207,18 @@ table#t01 th {
         });
     </script>
     <!-- //testimonials  Responsiveslides -->
+
+<c:if test="${utilisateur.getPortee_1()==0}">
+<script>
+   
+    $(document).ready(function() {
+    	  $('#exampleModalCenter1').modal('show');
+    	});
+</script>
+</c:if>
+
+
+
 	<!-- sticky nav bar-->
 	<script>
 		$(() => {

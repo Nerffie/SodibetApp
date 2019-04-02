@@ -94,6 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="agileinfo-logo mt-5">
 					</div>
 					<h3 class="txt-w3_agile" data-aos="fade-down">Hauteur de sous plafond</h3>
+					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Besoin d'aide ?</a>
 				</div>
 			</div>
 		</div>
@@ -104,39 +105,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //banner -->
 </header>
 <!-- //header -->
-<section class="contact py-5" id="contact">
-	<div class="container py-lg-3">
-		<form action="#" method="post" data-aos="fade-up">
-			<div class="row">
-				<div class="col-md-6 styled-input mt-0">
-				<h3>Hauteur sous plafond brute :<br></h3>
-					<input type="text" name="hspb" placeholder="HSPb" required>
-				</div>
-				
-				<div class="col-md-6 styled-input mt-md-0">
-				<h3>Gaine :<br></h3>
-				<input type="text" name="gaine" placeholder="G" required>
-				</div> 
-			</div>
-			<br>	
-			
-			<div class="row">
-				<div class="col-md-6 styled-input">
-				<h3>Faux-Plafond :<br></h3>
-				
-					<input type="text" name="fp" placeholder="FP" required>
-					<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
-					<span class="erreur">${erreur['erreur_type']}</span>
-				<span class="erreur">${erreur['erreur_condition']}</span>
-				</div>
-				
-			</div>
-			<div class="click text-center mt-3">
-				<input type="submit" name ="calcul" value="Afficher résultat">
-			</div>
-		</form>
-	</div>
-</section>
 <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">

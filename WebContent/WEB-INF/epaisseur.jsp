@@ -94,6 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="agileinfo-logo mt-5">
 					</div>
 					<h3 class="txt-w3_agile" data-aos="fade-down">Epaisseur du plancher</h3>
+					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Besoin d'aide ?</a>
 				</div>
 			</div>
 		</div>
@@ -123,10 +124,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div> 
 			</div>
 			<br>	
-			
+			<h3>La portée :<br></h3>
 			<div class="row">
 				<div class="col-md-6 styled-input">
-				<h3>La portée :<br></h3>
 				<span class="erreur">${erreur['erreur_portee']}</span>
 					<input type="text" name="portee" placeholder="Ex : 7.9" required>
 					
