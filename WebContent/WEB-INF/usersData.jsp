@@ -90,21 +90,6 @@ table#t01 th {
         </div>
         <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
           <li>
-            <a href="Predimensionnement" class="active">Prédimensionnement</a>
-          </li>
-             <li>
-            <a href="#" class="active">Hypothéses</a>
-          </li>
-             <li>
-            <a href="#" class="active">Posez une question</a>
-          </li>
-          <li>
-            <a href="#" class="active">Contact</a>
-          </li>
-             <li>
-            <a href="#" class="active">Plaquette</a>
-          </li>
-          <li>
             <a href="Logout"><button  type="button" class="btn btn-secondary" >
               Log out
             </button></a>
@@ -118,7 +103,7 @@ table#t01 th {
 		<div class="container">
 			<div class="row banner-text">
 				<div class=" col-lg-8">
-					<h3 class="txt-w3_agile" data-aos="fade-down">Calcul portée limite par la flèche</h3>
+					<h3 class="txt-w3_agile" data-aos="fade-down">Administration</h3>
 				</div>
 		</div>
 	</div>
@@ -127,19 +112,34 @@ table#t01 th {
 
 
 </header>
-<h3 class="text-center">Charge : ${charge} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Epaisseur : <fmt:formatNumber value="${resultat.get(4)}" minFractionDigits="0" maxFractionDigits="0"/> +<fmt:formatNumber value="${resultat.get(5)}" minFractionDigits="0" maxFractionDigits="0"/></h3>
+<h3 class="text-center">Tous les utilisateurs</h3>
 <section class="contact py-5" id="contact">
 
 	<div class="container py-lg-3">
 
 				<table id="t01">
   <tr>
-    <th>Travées</th>
-    <th>Poutrelles</th> 
-    <th>Portée</th>
+    <th>Nom</th>
+    <th>Prénom</th> 
+    <th>Catégorie</th>
+    <th>Sous-Catégorie</th>
   </tr>
+  
+  
+  <c:forEach var="user" items="${users}" begin="0">
   <tr>
-    <td rowspan="2">Isostatique</td>
+  <td><c:out value="${user.getNom()}"></c:out></td>
+  <td><c:out value="${user.getPrenom()}"></c:out></td>
+  <td><c:out value="${user.getCategorie()}"></c:out></td>
+  <td><c:out value="${user.getSous_categorie()}"></c:out></td>
+  </tr>
+  </c:forEach>
+  
+  
+  
+  
+  <!--  <tr>
+    <td>Isostatique</td>
     <td>Simple</td>
     <td> ${resultat.get(0)}</td>
   </tr>
@@ -157,10 +157,9 @@ table#t01 th {
     <td>Jumelle</td>
     <td>${resultat.get(3) }</td>
   </tr>
+  -->
 </table>
-<div class="click text-center mt-3">
-				<a href="Portee"><button type="button" class="btn btn-primary">Retour</button></a>
-			</div>
+
 			
 	</div>
 </section>

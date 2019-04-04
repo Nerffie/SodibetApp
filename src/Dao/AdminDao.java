@@ -1,9 +1,8 @@
 package Dao;
 
-import java.util.ArrayList;
+
 
 import Beans.Admin;
-import Beans.Utilisateur;
 
 public interface AdminDao {
 	

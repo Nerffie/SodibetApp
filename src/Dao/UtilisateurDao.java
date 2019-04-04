@@ -1,5 +1,7 @@
 package Dao;
 
+import java.util.ArrayList;
+
 import Beans.Utilisateur;
 
 public interface UtilisateurDao {
@@ -14,4 +16,5 @@ public interface UtilisateurDao {
     void nePlusAfficher2(String email) throws DAOException;
     void nePlusAfficher3(String email) throws DAOException;
     void nePlusAfficher4(String email) throws DAOException;
+    ArrayList<Utilisateur> getUsers() throws DAOException;
 }

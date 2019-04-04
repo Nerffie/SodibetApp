@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import Dao.DAOUtilitaire;
 import Beans.Utilisateur;
@@ -308,4 +309,34 @@ public class UtilisateurDaoImpl implements UtilisateurDao {
             DAOUtilitaire.fermeturesSilencieuses( valeursAutoGenerees, preparedStatement, connexion );
         }
     }
+
+    private static final String SQL_SELECT_ALL = "SELECT * FROM utilisateur";
+	@Override
+	public ArrayList<Utilisateur> getUsers() throws DAOException {
+		// TODO Auto-generated method stub
+		
+		Connection connexion = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        ArrayList<Utilisateur> resultat = new ArrayList<Utilisateur>();
+        Utilisateur user;
+
+        try {
+        	connexion = daoFactory.getConnection();
+            preparedStatement = DAOUtilitaire.initialisationRequetePreparee( connexion, SQL_SELECT_ALL, false);
+            resultSet = preparedStatement.executeQuery();
+
+            /* Analyse du statut retourné par la requête d'insertion */
+            while( resultSet.next() ) {
+                user = map(resultSet);
+                resultat.add(user);
+            }
+        } catch ( SQLException e ) {
+            throw new DAOException( e );
+        } finally {
+            DAOUtilitaire.fermeturesSilencieuses( resultSet, preparedStatement, connexion );
+        }
+		
+		return resultat;
+	}
 }

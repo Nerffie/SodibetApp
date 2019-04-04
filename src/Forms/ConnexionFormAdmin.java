@@ -47,6 +47,7 @@ public class ConnexionFormAdmin {
 	    	admin = adminDao.trouver(id);
 	        resultat = "Succès de login.";
 	    } else {
+	    	System.out.println(erreurs.values());
 	        resultat = "Échec de login. ";
 	    }
 	    return admin;

@@ -103,19 +103,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- contact -->
 <section class="contact py-5" id="contact">
 	<div class="container py-lg-3">
-		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Get in touch</h3>
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in">Posez une question</h3>
 		<form action="#" method="post" data-aos="fade-up">
 			<div class="row">
 				<div class="col-md-12 styled-input mt-0">
-					<input type="text" name="sujet" placeholder="Sujet" required="">
+					<input type="text" name="sujet" placeholder="Sujet" required>
 				</div>
 				
 			</div>
 			<div class="styled-input">
-				<textarea name="message" placeholder="Message" required=""></textarea>
+				<textarea name="message" placeholder="Message" required></textarea>
 			</div>
 			<div class="click text-center mt-3">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Envoyer">
 			</div>
 		</form>
 	</div>
