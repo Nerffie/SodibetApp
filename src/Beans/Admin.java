@@ -1,6 +1,6 @@
 package Beans;
 
-import java.sql.Date;
+
 
 public class Admin {
 	private String id;

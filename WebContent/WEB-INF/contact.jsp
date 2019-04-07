@@ -65,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
              <li>
-            <a href="Hypotheses" class="active">Hypothéses</a>
+            <a href="Hypotheses" class="active">Hypothèses</a>
           </li>
              <li>
             <a href="Ask" class="active">Posez une question</a>
@@ -74,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Contact" class="active">Contact</a>
           </li>
              <li>
-            <a href="#" class="active">Plaquette</a>
+            <a href="Plaquette" class="active">Plaquette</a>
           </li>
           <li>
             <a href="Logout"><button  type="button" class="btn btn-secondary" >
@@ -99,11 +99,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container py-md-4">
 	<div class="footer-grid_section text-center" data-aos="zoom-in">
 				<div class="footer-title mb-3">
-					<a href="#"><i class="fab fa-blackberry mr-2"></i> SODIBET</a>
+					<a href="//www.sodibet.com/" target="_blank">SODIBET</a>
 				</div>
 				<div class="footer-text">
-					<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat.
-					 Lorem ipsum dolor sit amet, consectetur elit.</p>
+					<p>Le spécialiste du plancher aux normes parasismiques :
+
+- Sodibet conçoit, produit et commercialise des planchers préfabriqués conformes aux réglementations en vigueur qu'elles soient marocaines (NM) ou européennes (BAEL, CPT Planchers, eurocodes) et particulièrement aux normes parasismiques (RPS et PS)</p>
 				</div>
 				<ul class="social_section_1info">
 					<li class="mb-2 facebook"><a href="#"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
@@ -116,11 +117,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="row footer-top mt-md-5 mt-4">
 			<div class="col-lg-4 col-md-6 footer-grid_section_1its_w3" data-aos="fade-right">
 				<div class="footer-title">
-					<h3 style=" position: relative;left: 230px">Contact</h3>
+					<h3>Contact</h3>
 				</div>
 				<div class="footer-text">
-					<p>Address : 1234 lock, Charlotte, North Carolina, United States</p>
-					<p>Phone : +12 534894364</p>
+					<p>Adresse siège social : Quartier industriel Old Ogba, avenue Hassan II, Km 6 RP1 TEMARA</p>
+					<p>Adresse usine : Propriété dite Mustapha 12, zone industrielle Ain Atiq, TEMARA</p>
+					<p>Téléphone : +212 5 37 64 33 17</p>
 					
 				</div>
 			</div>
@@ -129,31 +131,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3><br></h3>
 				</div>
 				<div class="footer-text">
-					<p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
-					<p>Fax : +12 534894364</p>
+					<p>Email : <a href="mailto:mehdi.maachi@sodibet.com">mehdi.maachi@sodibet.com</a></p>
+					<p>Email : <a href="mailto:amine.maachi@sodibet.com">amine.maachi@sodibet.com</a></p>
+					<p>Fax : ???</p>
 					
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 mt-md-0 mt-4 footer-grid_section_1its_w3" data-aos="fade-up">
-				<div class="footer-title">
-					<h3>Quick links</h3>
-				</div>
-				<div class="row">
-					
-					<ul class="col-6 links">
-						<li><a href="Login" >Login</a></li>
-						<li><a href="#contact" class="scroll">Contact </a></li>
-					</ul>
-					<ul class="col-6 links">
-						
-						
-						
-					<li><a href="Home" >Home </a></li>
-					
-					</ul>
-				</div>
-			</div>
-			
 		</div>
 	</div>
 </section>
@@ -161,10 +144,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 
 <!-- copyright -->
-<div class="cpy-right text-center py-3">
-	<p class="">© 2019 SODIBET. All rights reserved 
-	</p>
-</div>
 <!-- //copyright -->
 <!-- //faqs -->
 

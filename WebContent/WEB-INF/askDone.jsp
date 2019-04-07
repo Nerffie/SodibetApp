@@ -75,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Contact" class="active">Contact</a>
           </li>
              <li>
-            <a href="#" class="active">Plaquette</a>
+          <a href="Plaquette" class="active">Plaquette</a>
           </li>
           <li>
             <a href="Logout"><button  type="button" class="btn btn-secondary" >

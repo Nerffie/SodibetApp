@@ -103,7 +103,7 @@ table#t01 th {
             <a href="Contact" class="active">Contact</a>
           </li>
              <li>
-            <a href="#" class="active">Plaquette</a>
+            <a href="Plaquette" class="active">Plaquette</a>
           </li>
           <li>
             <a href="Logout"><button  type="button" class="btn btn-secondary" >
@@ -118,8 +118,9 @@ table#t01 th {
 	<div class="banner layer" id="home">
 		<div class="container">
 			<div class="row banner-text">
+			
 				<div class=" col-lg-8">
-					<h3 class="txt-w3_agile" data-aos="fade-down">Calcul de litrage</h3>
+					<br><h3 class="txt-w3_agile" data-aos="fade-down">Calcul de litrage</h3>
 				</div>
 		</div>
 	</div>

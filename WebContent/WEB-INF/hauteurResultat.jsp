@@ -103,7 +103,7 @@ table#t01 th {
             <a href="Contact" class="active">Contact</a>
           </li>
              <li>
-            <a href="#" class="active">Plaquette</a>
+          <a href="Plaquette" class="active">Plaquette</a>
           </li>
           <li>
             <a href="Logout"><button  type="button" class="btn btn-secondary" >
@@ -147,7 +147,7 @@ table#t01 th {
     <td>${resultat}</td>
   </tr>
 </table>
-*Hors revêtement
+
 				
 <div class="click text-center mt-3">
 				<a href="Hauteur"><button type="button" class="btn btn-primary">Retour</button></a>
