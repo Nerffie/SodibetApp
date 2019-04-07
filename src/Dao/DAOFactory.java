@@ -121,5 +121,9 @@ public class DAOFactory {
     	return new ContinueJumelleDaoImpl(this);
     }
     
+    public LitrageDao getLitrageDao() {
+    	return new LitrageDaoImpl(this);
+    }
+    
 }
 

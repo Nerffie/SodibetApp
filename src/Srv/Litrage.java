@@ -1,6 +1,8 @@
 package Srv;
 
 import java.io.IOException;
+import java.util.ArrayList;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -9,6 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import Beans.Utilisateur;
 import Dao.DAOFactory;
+import Dao.LitrageDao;
 import Dao.UtilisateurDao;
 import Forms.DontShow;
 import Forms.LitrageForm;
@@ -29,6 +32,7 @@ public class Litrage extends HttpServlet {
     
 	
 	private UtilisateurDao utilisateurDao;
+	private LitrageDao litrageDao;
     
 	
     public void init() throws ServletException {
@@ -36,6 +40,7 @@ public class Litrage extends HttpServlet {
         /* Récupération d'une instance de notre DAO Utilisateur */
 
         this.utilisateurDao = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getUtilisateurDao();
+        this.litrageDao = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getLitrageDao();
 
     }
    
@@ -66,11 +71,10 @@ public class Litrage extends HttpServlet {
 			//update la table pour mettre portee 1 à 1
 		}
 		if(req.getParameter(ATT_CALCUL)!=null) {
-			LitrageForm form = new LitrageForm();
-			float resultat = form.calculerLitrage(req);
+			LitrageForm form = new LitrageForm(litrageDao);
+			ArrayList<Float >resultat = form.calculerLitrage(req);
 			if (form.getErreurs().isEmpty()) {
 				req.setAttribute(ATT_RESULT, resultat);
-				req.setAttribute(ATT_EPAISSEUR, req.getParameter(ATT_EPAISSEUR));
 				req.setAttribute(ATT_SUPERFICIE, req.getParameter(ATT_SUPERFICIE));
 				
 				this.getServletContext().getRequestDispatcher("/WEB-INF/litrageResultat.jsp").forward(req, resp);

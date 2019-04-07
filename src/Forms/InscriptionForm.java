@@ -63,13 +63,6 @@ public class InscriptionForm {
 			System.out.println("ERREUR LORS DE LA TRANSFORMATION DE LA DATE");
 			e1.printStackTrace();
 		}
-	   
-	    /*try {
-	        validationMotsDePasse( motDePasse, confirmation );
-	    } catch ( Exception e ) {
-	        setErreur( CHAMP_PASS, e.getMessage() );
-	        setErreur( CHAMP_PASS_CONF, null );
-	    }*/
 	    
 	    Utilisateur utilisateur = new Utilisateur();
 	    

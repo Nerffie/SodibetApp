@@ -133,14 +133,14 @@ table#t01 th {
 	<div class="container py-lg-3">
 <table id="t01">
   <tr>
-    <th>Epaisseur (cm)</th>
+    <th>Epaisseur</th>
     <th>Superficie (m²)</th> 
     <th>Litrage du béton (m³)</th>
   </tr>
   <tr>
-    <td>${epaisseur}</td>
+    <td><fmt:formatNumber value="${resultat.get(1)}" minFractionDigits="0" maxFractionDigits="0"/> + <fmt:formatNumber value="${resultat.get(2)}" minFractionDigits="0" maxFractionDigits="0"/></td>
     <td> ${superficie}</td>
-    <td>${resultat}</td>
+    <td>${resultat.get(0)}</td>
   </tr>
 </table>				
 <div class="click text-center mt-3">

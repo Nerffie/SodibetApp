@@ -106,26 +106,76 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <section class="contact py-5" id="contact">
 	<div class="container py-lg-3">
 		<form action="#" method="post" data-aos="fade-up">
-			<div class="row">
-				<div class="col-md-6 styled-input mt-0">
-				<h3>Epaisseur de dalle :<br></h3>
-					<input type="text" name="epaisseur" placeholder="Centimètre" required>
-				</div>
-				
-				<div class="col-md-6 styled-input mt-md-0">
-				<h3>Superficie de dalle :<br></h3>
-				<input type="text" name="superficie" placeholder="Mètre carré" required>
-				</div> 
-			</div>
-			<br>	
 			
+				<h3>Epaisseur de la dalle de compression :<br></h3>
 			<div class="row">
 				<div class="col-md-6 styled-input">
-					<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
-				<span class="erreur">${erreur['erreur']}</span>
+					<select class="form-control" name="epaisseurX" id="epaisseurX" onchange="epaisseur(this);" required>
+						<option class="form-control" selected value="12">12
+						<option class="form-control" value="16">16
+						<option class="form-control" value="20">20
+						<option class="form-control" value="25">25
+						<option class="form-control" value="30">30
+					</select>
 				</div>
 				
-			</div>
+				<div class="col-md-6 styled-input">
+					<select class="form-control" name="epaisseurY12" id="epaisseur12" style="display:block;">
+								<option class="form-control" value="4">4
+								<option class="form-control" value="5">5
+								<option class="form-control" value="6">6
+								<option class="form-control" value="7">7
+								<option class="form-control" value="8">8
+								<option class="form-control" value="9">9
+								<option class="form-control" value="10">10
+					</select>
+					<select class="form-control" name="epaisseurY16" id="epaisseur16" style="display:none;">
+								<option class="form-control" value="4">4
+								<option class="form-control" value="5">5
+								<option class="form-control" value="6">6
+								<option class="form-control" value="7">7
+								<option class="form-control" value="8">8
+								<option class="form-control" value="9">9
+								<option class="form-control" value="10">10
+					</select>
+					<select class="form-control" name="epaisseurY20" id="epaisseur20" style="display:none;">
+								
+								<option class="form-control" value="5">5
+								<option class="form-control" value="6">6
+								<option class="form-control" value="7">7
+								<option class="form-control" value="8">8
+								<option class="form-control" value="9">9
+								<option class="form-control" value="10">10
+					</select>
+					<select class="form-control" name="epaisseurY25" id="epaisseur25" style="display:none;">
+								
+								<option class="form-control" value="5">5
+								<option class="form-control" value="6">6
+								<option class="form-control" value="7">7
+								<option class="form-control" value="8">8
+								<option class="form-control" value="9">9
+								<option class="form-control" value="10">10
+					</select>
+					<select class="form-control" name="epaisseurY30" id="epaisseur30" style="display:none;">
+							
+								<option class="form-control" value="5">5
+								<option class="form-control" value="6">6
+								<option class="form-control" value="7">7
+								<option class="form-control" value="8">8
+								<option class="form-control" value="9">9
+								<option class="form-control" value="10">10
+					</select>
+					
+				</div> 
+			</div><!-- end of row -->
+				<br>
+			<div class="col-md-6 styled-input mt-md-0">
+				<h3>Superficie de dalle :<br></h3>
+				<input type="text" name="superficie" placeholder="Mètre carré" required>
+				<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
+			<span class="erreur">${erreur['erreur']}</span>
+			</div> 
+
 			<div class="click text-center mt-3">
 				<input type="submit" name ="calcul" value="Afficher résultat">
 			</div>
@@ -201,6 +251,48 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     	});
 </script>
 </c:if>
+
+<script>
+    //Script pour afficher les options personnalisées selon l'option de select choisi
+    function epaisseur(that) {
+      
+        if(that.value=="12") {
+        	document.getElementById("epaisseur16").style.display = "none";
+        	document.getElementById("epaisseur20").style.display = "none";
+        	document.getElementById("epaisseur25").style.display = "none";
+        	document.getElementById("epaisseur30").style.display = "none";
+            document.getElementById("epaisseur12").style.display = "block";
+        }
+        else if(that.value=="16") {
+        	document.getElementById("epaisseur12").style.display = "none";
+        	document.getElementById("epaisseur20").style.display = "none";
+        	document.getElementById("epaisseur25").style.display = "none";
+        	document.getElementById("epaisseur30").style.display = "none";
+            document.getElementById("epaisseur16").style.display = "block";
+        }
+        else if(that.value=="20") {
+        	document.getElementById("epaisseur12").style.display = "none";
+        	document.getElementById("epaisseur16").style.display = "none";
+        	document.getElementById("epaisseur25").style.display = "none";
+        	document.getElementById("epaisseur30").style.display = "none";
+            document.getElementById("epaisseur20").style.display = "block";
+        }
+        else if(that.value=="25") {
+        	document.getElementById("epaisseur12").style.display = "none";
+        	document.getElementById("epaisseur16").style.display = "none";
+        	document.getElementById("epaisseur20").style.display = "none";
+        	document.getElementById("epaisseur30").style.display = "none";
+            document.getElementById("epaisseur25").style.display = "block";
+        }
+        else{
+        	document.getElementById("epaisseur12").style.display = "none";
+        	document.getElementById("epaisseur16").style.display = "none";
+        	document.getElementById("epaisseur20").style.display = "none";
+        	document.getElementById("epaisseur25").style.display = "none";
+            document.getElementById("epaisseur30").style.display = "block";
+        }
+    }
+</script>
 	<!-- sticky nav bar-->
 	<script>
 		$(() => {

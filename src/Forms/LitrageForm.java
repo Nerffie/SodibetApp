@@ -2,10 +2,13 @@ package Forms;
 
 
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+
+import Dao.LitrageDao;
 
 
 
@@ -13,18 +16,33 @@ import javax.servlet.http.HttpServletRequest;
 public class LitrageForm {
 	
 	
-	public static final String CHAMP_EPAISSEUR = "epaisseur";
+	//public static final String CHAMP_EPAISSEUR = "epaisseur";
+	private static final String CHAMP_EPAISSEUR_X  = "epaisseurX";
+	private static final String[] CHAMP_EPAISSEUR_Y  = {"epaisseurY12","epaisseurY16","epaisseurY20","epaisseurY25","epaisseurY30"};
 	public static final String CHAMP_SUPERFICIE = "superficie";
 	private static final String CHAMP_ERREUR = "erreur";
 	private Map<String, String> erreurs      = new HashMap<String, String>();
-	private float resultat;
+	private ArrayList<Float> resultat = new ArrayList<Float>();
+	
+	private LitrageDao litrageDao;
 	
 	
-	public float calculerLitrage(HttpServletRequest request){
+	
+	
+	public LitrageForm(LitrageDao litrageDao) {
+		super();
+		this.litrageDao = litrageDao;
+	}
+
+	public ArrayList<Float> calculerLitrage(HttpServletRequest request){
 	    try {
-	    	float epaisseur = Float.parseFloat(getValeurChamp(request, CHAMP_EPAISSEUR));
+	    	int epaisseurX = Integer.parseInt(getValeurChamp( request, CHAMP_EPAISSEUR_X ));
+	    	int epaisseurY = getEpaisseurY(epaisseurX,request);
 	    	float superficie = Float.parseFloat(getValeurChamp(request, CHAMP_SUPERFICIE));
-	    		resultat = (epaisseur/100)*superficie;
+	    	float consommation = litrageDao.chercherConsommation(epaisseurX, epaisseurY);
+	    	resultat.add(consommation * superficie);
+	    	resultat.add((float)epaisseurX);
+	    	resultat.add((float)epaisseurY);
 	    	
 	    }	
 	    	catch(NumberFormatException e) {
@@ -42,6 +60,16 @@ public class LitrageForm {
 	    }
 	}
 	
+	private int getEpaisseurY(int epaisseurX,HttpServletRequest request) {
+		switch(epaisseurX) {
+		case 12 : return Integer.parseInt(getValeurChamp(request,CHAMP_EPAISSEUR_Y[0]));
+		case 16 : return Integer.parseInt(getValeurChamp(request,CHAMP_EPAISSEUR_Y[1]));
+		case 20 : return Integer.parseInt(getValeurChamp(request,CHAMP_EPAISSEUR_Y[2]));
+		case 25 : return Integer.parseInt(getValeurChamp(request,CHAMP_EPAISSEUR_Y[3]));
+		case 30 : return Integer.parseInt(getValeurChamp(request,CHAMP_EPAISSEUR_Y[4]));
+		}
+		return 0;
+	}
 	
 	private void setErreur( String champ, String message ) {
 	    erreurs.put( champ, message );

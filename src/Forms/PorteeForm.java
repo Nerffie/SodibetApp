@@ -42,7 +42,7 @@ public class PorteeForm {
 	    int epaisseurY = getEpaisseurY(epaisseurX,request);
 	    
 		int numeroCharge = chargeColumn(charge);
-		System.out.println("epaisseur X : "+epaisseurX+", epaisseur Y : "+epaisseurY+", charge "+numeroCharge);
+		//System.out.println("epaisseur X : "+epaisseurX+", epaisseur Y : "+epaisseurY+", charge "+numeroCharge);
 	    
 		resultat.add(isostatiqueSimpleDao.calculerPortee(epaisseurX, epaisseurY, numeroCharge));
 		resultat.add(isostatiqueJumelleDao.calculerPortee(epaisseurX, epaisseurY, numeroCharge));

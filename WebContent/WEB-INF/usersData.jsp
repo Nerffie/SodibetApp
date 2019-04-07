@@ -104,7 +104,7 @@ table#t01 th {
 			<div class="row banner-text">
 			
 				<div class=" col-lg-8">
-					<h3 class="txt-w3_agile" data-aos="fade-down">Administration</h3>
+					<br><h3 class="txt-w3_agile" data-aos="fade-down">Administration</h3>
 				</div>
 		</div>
 	</div>
@@ -125,7 +125,7 @@ table#t01 th {
   <tr>
     <th>Nom complet</th>
     <th>Catégorie</th>
-    <th>Sous-Catégorie</th>
+    <th>Dernière connexion</th>
   </tr>
   
   
@@ -134,7 +134,7 @@ table#t01 th {
   <td><c:out value="${user.getNom()} ${user.getPrenom()}"></c:out></td>
 
   <td><c:out value="${user.getCategorie()}"></c:out></td>
-  <td><c:out value="${user.getSous_categorie()}"></c:out></td>
+  <td><c:out value="${user.getDate_connexion()}"></c:out></td>
   </tr>
   </c:forEach>
 </table>
