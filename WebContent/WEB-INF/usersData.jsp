@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Portée</title>
+<title>Tous les utilisateurs</title>
 <!-- for-mobile-apps -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,6 +102,7 @@ table#t01 th {
 	<div class="banner layer" id="home">
 		<div class="container">
 			<div class="row banner-text">
+			
 				<div class=" col-lg-8">
 					<h3 class="txt-w3_agile" data-aos="fade-down">Administration</h3>
 				</div>
@@ -112,15 +113,17 @@ table#t01 th {
 
 
 </header>
-<h3 class="text-center">Tous les utilisateurs</h3>
+
 <section class="contact py-5" id="contact">
 
 	<div class="container py-lg-3">
-
+<div class="col-md-12 styled-input mt-0">
+					<input type="text" id="search" onkeyup="myFunction()" name="search" placeholder="Chercher">
+				</div>
+				<br>
 				<table id="t01">
   <tr>
-    <th>Nom</th>
-    <th>Prénom</th> 
+    <th>Nom complet</th>
     <th>Catégorie</th>
     <th>Sous-Catégorie</th>
   </tr>
@@ -128,36 +131,12 @@ table#t01 th {
   
   <c:forEach var="user" items="${users}" begin="0">
   <tr>
-  <td><c:out value="${user.getNom()}"></c:out></td>
-  <td><c:out value="${user.getPrenom()}"></c:out></td>
+  <td><c:out value="${user.getNom()} ${user.getPrenom()}"></c:out></td>
+
   <td><c:out value="${user.getCategorie()}"></c:out></td>
   <td><c:out value="${user.getSous_categorie()}"></c:out></td>
   </tr>
   </c:forEach>
-  
-  
-  
-  
-  <!--  <tr>
-    <td>Isostatique</td>
-    <td>Simple</td>
-    <td> ${resultat.get(0)}</td>
-  </tr>
-  <tr>
-    <td>Jumelle</td>
-    <td>${resultat.get(1) }</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Continue</td>
-    <td>Simple</td>
-    <td>${resultat.get(2) }</td>
-  </tr>
-   <tr>
-    
-    <td>Jumelle</td>
-    <td>${resultat.get(3) }</td>
-  </tr>
-  -->
 </table>
 
 			
@@ -185,6 +164,38 @@ table#t01 th {
 
 	<!-- testimonials  Responsiveslides -->
     <script src="inc/js/responsiveslides.min.js"></script>
+    <script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue,td2,td3;
+  input = document.getElementById("search");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("t01");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    td2 = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+    if(td2){
+    	txtValue = td2.textContent || td2.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } 
+   }
+  }
+}
+</script>
+    
+    
     <script>
         // You can also use"$(window).load(function() {"
         $(function () {
