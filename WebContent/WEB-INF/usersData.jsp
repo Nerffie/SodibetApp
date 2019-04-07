@@ -115,8 +115,9 @@ table#t01 th {
 </header>
 
 <section class="contact py-5" id="contact">
-
+	
 	<div class="container py-lg-3">
+	<h4>Nombre d'utilisateurs inscrits : ${users.size() }</h4><br>
 <div class="col-md-12 styled-input mt-0">
 					<input type="text" id="search" onkeyup="myFunction()" name="search" placeholder="Chercher">
 				</div>
@@ -129,12 +130,16 @@ table#t01 th {
   </tr>
   
   
-  <c:forEach var="user" items="${users}" begin="0">
+  <c:forEach var="user" items="${users}" varStatus="status" begin="0">
   <tr>
-  <td><c:out value="${user.getNom()} ${user.getPrenom()}"></c:out></td>
+ <td> <a href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button" id ="<c:out value="${status.count-1 }"></c:out>"onClick="loadInfo(this.id)">${user.getNom()}&nbsp; ${user.getPrenom()}</a></td>
 
-  <td><c:out value="${user.getCategorie()}"></c:out></td>
-  <td><c:out value="${user.getDate_connexion()}"></c:out></td>
+  <td>${user.getCategorie()}</td>
+  <td>${user.getDate_connexion()}</td>
+  <td style="display: none;" id="<c:out value="date_naissance_${status.count-1 }"></c:out>">${user.getDate_naissance()}</td>
+  <td style="display: none;" id="<c:out value="sous_categorie_${status.count-1 }"></c:out>">${user.getSous_categorie()}</td>
+  <td style="display: none;" id="<c:out value="ville_${status.count-1 }"></c:out>">${user.getVille()}</td>
+  <td style="display: none;" id="<c:out value="email_${status.count-1 }"></c:out>">${user.getEmail()}</td>
   </tr>
   </c:forEach>
 </table>
@@ -144,7 +149,27 @@ table#t01 th {
 </section>
 <!-- //contact -->
 <!-- //header -->
-
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle">Infos supplémentaires</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div id="date_naissance_modal"></div>
+				<div id="email_modal"></div>
+				<div id="ville_modal"></div>
+				<div id="sous_categorie_modal"></div>
+			</div>
+			<div class="modal-footer">			
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+			</div>
+		</div>
+	</div>
+</div>
 
     <!-- js -->
     <script src="inc/js/jquery-2.2.3.min.js"></script>
@@ -194,7 +219,17 @@ function myFunction() {
   }
 }
 </script>
-    
+    <script>
+function loadInfo(clicked_id) {
+  // Declare variables
+ document.getElementById("date_naissance_modal").innerHTML = "Date naisance : "+document.getElementById("date_naissance_"+clicked_id).innerHTML;
+ document.getElementById("email_modal").innerHTML = "Email : "+document.getElementById("email_"+clicked_id).innerHTML;
+ document.getElementById("ville_modal").innerHTML = "Ville : "+document.getElementById("ville_"+clicked_id).innerHTML;
+ document.getElementById("sous_categorie_modal").innerHTML = "Sous categorie : "+document.getElementById("sous_categorie_"+clicked_id).innerHTML;
+ 
+ console.log(clicked_id);
+}
+</script>
     
     <script>
         // You can also use"$(window).load(function() {"

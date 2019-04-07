@@ -82,7 +82,7 @@ public class ConnexionFormAdmin {
 	    passwordEncryptor.setPlainDigest( false );
 	    String motDePasseHash = adminDao.getPass(id);
 	     if(!passwordEncryptor.checkPassword(motDePasse, motDePasseHash)) {
-	    	 throw new Exception("Le mot de passe n'est pas correct");
+	    	 throw new Exception("Les informations de connexion sont incorrects");
 	     }
 	}
 
@@ -94,7 +94,7 @@ public class ConnexionFormAdmin {
 	private void traiterId( String id, Admin admin ) {
 	    try {
 	    	if ( adminDao.trouver( id ) == null ) {
-	            throw new Exception( "Cette id est introuvable." );
+	            throw new Exception( "Les informations de connexion sont incorrects" );
 			}
 		    admin.setId( id );
 	    }

@@ -1,6 +1,8 @@
 package Srv;
 
 import java.io.IOException;
+
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -11,6 +13,7 @@ import Beans.Admin;
 
 import Dao.AdminDao;
 import Dao.DAOFactory;
+
 import Forms.ConnexionFormAdmin;
 
 
@@ -40,8 +43,16 @@ public class LoginAdmin extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		this.getServletContext().getRequestDispatcher("/WEB-INF/loginAdmin.jsp").forward(req, resp);
+		HttpSession session = req.getSession();
+		
+		if (session.getAttribute(ATT_USER)!=null) {
+			
+			resp.sendRedirect("UsersData");
+		}
+		else {
+			this.getServletContext().getRequestDispatcher("/WEB-INF/loginAdmin.jsp").forward(req, resp);
+		}
+		
 	}
 	
 	
