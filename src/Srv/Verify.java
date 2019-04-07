@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 import Dao.DAOFactory;
 import Dao.UtilisateurDao;
 import Forms.VerifyUser;
@@ -31,17 +32,17 @@ public class Verify extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		String valide_hash = request.getParameter(ATT_VALIDE_HASH);
 		if (valide_hash == null) {
 			response.sendRedirect("Home");
 		}
 		else {
-			VerifyUser verification = new VerifyUser(utilisateurDao,valide_hash);
+			VerifyUser verification = new VerifyUser(utilisateurDao,VerifyUser.encodeURIComponent(request.getParameter(ATT_VALIDE_HASH)));
 			if (verification.traiterVerification()) {
 				this.getServletContext().getRequestDispatcher("/WEB-INF/verifyDone.jsp").forward(request, response);
 			}
 			else {
-				System.out.println("it didn't verify");
 				response.sendRedirect("Home");
 			}
 			

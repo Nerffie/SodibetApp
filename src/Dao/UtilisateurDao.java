@@ -17,4 +17,5 @@ public interface UtilisateurDao {
     void nePlusAfficher3(String email) throws DAOException;
     void nePlusAfficher4(String email) throws DAOException;
     ArrayList<Utilisateur> getUsers() throws DAOException;
+    void updateLastConnexion(String email) throws DAOException;
 }

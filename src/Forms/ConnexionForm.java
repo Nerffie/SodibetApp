@@ -46,7 +46,9 @@ public class ConnexionForm {
 	   
 
 	    if ( erreurs.isEmpty() ) {
+	    	utilisateurDao.updateLastConnexion(email);
 	    	utilisateur = utilisateurDao.trouver(email);
+	    	
 	        resultat = "Succès de login.";
 	        
 	    } else {

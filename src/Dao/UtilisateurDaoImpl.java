@@ -106,6 +106,7 @@ public class UtilisateurDaoImpl implements UtilisateurDao {
         utilisateur.setPortee_4(resultSet.getInt("portee_4"));
         utilisateur.setDate_inscription( resultSet.getDate("date_inscription"));
         utilisateur.setValide_hash(resultSet.getString("valide_hash"));
+        utilisateur.setDate_connexion(resultSet.getDate("date_connexion"));
 
         return utilisateur;
 
@@ -338,5 +339,37 @@ public class UtilisateurDaoImpl implements UtilisateurDao {
         }
 		
 		return resultat;
+	}
+
+	
+	
+	
+
+	
+    private static final String SQL_UPDATE_LAST_CONNEXION = "UPDATE utilisateur SET date_connexion = NOW() WHERE email = ?";
+	@Override
+	public void updateLastConnexion(String email) throws DAOException {
+		// TODO Auto-generated method stub
+		Connection connexion = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet valeursAutoGenerees = null;
+
+        try {
+
+            /* Récupération d'une connexion depuis la Factory */
+
+            connexion = daoFactory.getConnection();
+            preparedStatement = DAOUtilitaire.initialisationRequetePreparee( connexion, SQL_UPDATE_LAST_CONNEXION, false, email);
+            int statut = preparedStatement.executeUpdate();
+
+            /* Analyse du statut retourné par la requête d'insertion */
+            if ( statut == 0 ) {
+                throw new DAOException( "Échec de la mise à jour de la derniere connexion dans la base de données" );
+            }
+        } catch ( SQLException e ) {
+            throw new DAOException( e );
+        } finally {
+            DAOUtilitaire.fermeturesSilencieuses( valeursAutoGenerees, preparedStatement, connexion );
+        }
 	}
 }

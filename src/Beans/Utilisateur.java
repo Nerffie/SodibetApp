@@ -19,11 +19,12 @@ public class Utilisateur {
 	private Integer portee_4;
 	private Date date_inscription;
 	private String valide_hash;
+	private Date date_connexion;
 	
 	
 	public Utilisateur(Long id, String prenom, String nom, Date date_naissance, String email, String mot_de_passe,
 			String categorie, String sous_categorie, Integer valide, Integer portee_1, Integer portee_2,
-			Integer portee_3, Integer portee_4, Date date_inscription, String valide_hash) {
+			Integer portee_3, Integer portee_4, Date date_inscription, String valide_hash,Date date_connexion) {
 		super();
 		this.id = id;
 		this.prenom = prenom;
@@ -40,8 +41,17 @@ public class Utilisateur {
 		this.portee_4 = portee_4;
 		this.date_inscription = date_inscription;
 		this.valide_hash = valide_hash;
+		this.date_connexion=date_connexion;
 	}
 	
+	public Date getDate_connexion() {
+		return date_connexion;
+	}
+
+	public void setDate_connexion(Date date_connexion) {
+		this.date_connexion = date_connexion;
+	}
+
 	public Utilisateur() {
 		// TODO Auto-generated constructor stub
 	}

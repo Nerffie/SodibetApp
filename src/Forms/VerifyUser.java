@@ -1,5 +1,6 @@
 package Forms;
 
+
 import Beans.Utilisateur;
 import Dao.UtilisateurDao;
 
@@ -16,11 +17,11 @@ public class VerifyUser {
 	public boolean verificationPossible() {
 		Utilisateur utilisateurAValider = utilisateurDao.trouverParValideHash(key);
 		if (utilisateurAValider == null){
-			System.out.println("3");
+			
 			return false;
 		}
 		else {
-			System.out.println("4");
+			
 			return !utilisateurDao.isValide(utilisateurAValider.getId());
 		}
 	}
@@ -33,10 +34,18 @@ public class VerifyUser {
 	public boolean traiterVerification() {
 		if (verificationPossible()) {
 			verifierUtilisateur();
-			System.out.println("1");
+			
 			return true;
 		}
-			System.out.println("2");
+			
 		return false;
 	}
+	//To alter the url parameter hash key because sometimes hash keys have + in them and the parser converts them to spaces which corrupts the hash key
+	public static String encodeURIComponent(String s) {
+	    String result;
+	        result = s.replace(" ", "+");
+	    return result;
+	}
+	
+	
 }
