@@ -110,25 +110,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="row">
 				<div class="col-md-6 styled-input mt-0">
 				<h3>Hauteur sous plafond brute :<br></h3>
-					<input type="text" name="hspb" placeholder="HSPb" required>
+					<input type="text" name="hspb" placeholder="en centimère" required>
 				</div>
 				
 				<div class="col-md-6 styled-input mt-md-0">
 				<h3>Gaine :<br></h3>
-				<input type="text" name="gaine" placeholder="G" required>
+				<input type="text" name="gaine" placeholder="en centimètre" required>
 				</div> 
 			</div>
-			<br>	
-			
+			<br>
 			<div class="row">
-				<div class="col-md-6 styled-input">
-				<h3>Faux-Plafond :<br></h3>
+				<div class="col-md-6 styled-input mt-0">
+				<h3>Faux plafond :<br></h3>
 				
-					<input type="text" name="fp" placeholder="FP" required>
-					<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
-					<span class="erreur">${erreur['erreur_type']}</span>
-				<span class="erreur">${erreur['erreur_condition']}</span>
+				<input type="text" name="hfp" placeholder="en centimètre" required>
+				<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
+				<span class="erreur">${erreur['erreur_type']}</span>
+				<span class="erreur">${erreur['erreur_condition']}</span>	
 				</div>
+				
+				<div class="col-md-6 styled-input mt-md-0">
+				<h3>Epaisseur de revêtement :<br></h3>
+				<input type="text" name="ep" placeholder="en centimètre" required>
+				</div> 
 				
 			</div>
 			<div class="click text-center mt-3">

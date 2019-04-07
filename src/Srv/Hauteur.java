@@ -27,8 +27,9 @@ public class Hauteur extends HttpServlet {
 	public static final String ATT_RESULT = "resultat";
 	public static final String CONF_DAO_FACTORY = "daofactory";
 	private static final String ATT_HSPB  = "hspb";
-	private static final String ATT_FP  = "fp";
+	private static final String ATT_HFP  = "hfp";
 	private static final String ATT_GAINE = "gaine";
+	private static final String ATT_REVETEMENT = "ep";
     
 	
 	private UtilisateurDao utilisateurDao;
@@ -78,7 +79,8 @@ public class Hauteur extends HttpServlet {
 				req.setAttribute(ATT_RESULT, resultat);
 				req.setAttribute(ATT_GAINE, req.getParameter(ATT_GAINE));
 				req.setAttribute(ATT_HSPB, req.getParameter(ATT_HSPB));
-				req.setAttribute(ATT_FP, req.getParameter(ATT_FP));
+				req.setAttribute(ATT_HFP, req.getParameter(ATT_HFP));
+				req.setAttribute(ATT_REVETEMENT, req.getParameter(ATT_REVETEMENT));
 				this.getServletContext().getRequestDispatcher("/WEB-INF/hauteurResultat.jsp").forward(req, resp);
 			}
 			else {

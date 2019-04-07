@@ -136,12 +136,14 @@ table#t01 th {
     <th>HSPb</th>
     <th>Gaine</th> 
     <th>Faux-plafond</th>
-    <th>HSPn</th>
+    <th>Ep de revêtement</th>
+    <th>HSP nette</th>
   </tr>
   <tr>
     <td>${hspb}</td>
     <td> ${gaine}</td>
-    <td>${fp}</td>
+    <td>${hfp}</td>
+    <td>${ep}</td>
     <td>${resultat}</td>
   </tr>
 </table>

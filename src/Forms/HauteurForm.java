@@ -13,8 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 public class HauteurForm {
 	
 	private static final String CHAMP_HSPB  = "hspb";
-	private static final String CHAMP_FP  = "fp";
+	private static final String CHAMP_HFP  = "hfp";
 	private static final String CHAMP_GAINE = "gaine";
+	private static final String CHAMP_REVETEMENT = "ep";
 	private static final String CHAMP_ERREUR_TYPE = "erreur_type";
 	private static final String CHAMP_ERREUR_CONDITION = "erreur_condition";
 	
@@ -28,12 +29,13 @@ public class HauteurForm {
 	    try {
 	    	float hspb = Float.parseFloat(getValeurChamp(request, CHAMP_HSPB));
 	    	float gaine = Float.parseFloat(getValeurChamp(request, CHAMP_GAINE));
-	    	float fp = Float.parseFloat(getValeurChamp(request, CHAMP_FP));
+	    	float fp = Float.parseFloat(getValeurChamp(request, CHAMP_HFP));
+	    	float ep = Float.parseFloat(getValeurChamp(request, CHAMP_REVETEMENT));
 	    	if (!(fp>=gaine+5)) {
 	    		setErreur( CHAMP_ERREUR_CONDITION, "Veuillez vérifier la condition FP>=G+5" );
 	    	}
 	    	else{
-	    		resultat = hspb-fp;
+	    		resultat = hspb-fp-ep-5;
 	    	}
 	    }	
 	    	catch(NumberFormatException e) {
