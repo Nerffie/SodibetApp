@@ -119,7 +119,7 @@ table#t01 th {
 		<div class="container">
 			<div class="row banner-text">
 				<div class=" col-lg-8">
-					<h3 class="txt-w3_agile" data-aos="fade-down">Hauteur de sous plafond</h3>
+					<br><h3 class="txt-w3_agile" data-aos="fade-down">Hauteur de sous plafond</h3>
 				</div>
 		</div>
 	</div>
@@ -137,16 +137,17 @@ table#t01 th {
     <th>Gaine</th> 
     <th>Faux-plafond</th>
     <th>Ep de revêtement</th>
-    <th>HSP nette</th>
+   
   </tr>
   <tr>
     <td>${hspb}</td>
     <td> ${gaine}</td>
     <td>${hfp}</td>
     <td>${ep}</td>
-    <td>${resultat}</td>
+    
   </tr>
-</table>
+</table><br>
+<h4>Hauteur sous plafond nette : ${resultat}</h4>
 
 				
 <div class="click text-center mt-3">

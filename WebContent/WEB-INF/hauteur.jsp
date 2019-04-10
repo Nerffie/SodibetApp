@@ -93,7 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  <div class="slider-info col-lg-8">
 					<div class="agileinfo-logo mt-5">
 					</div>
-					<h3 class="txt-w3_agile" data-aos="fade-down">Hauteur de sous plafond</h3>
+					<br><h3 class="txt-w3_agile" data-aos="fade-down">Hauteur de sous plafond</h3>
 				</div>
 			</div>
 		</div>

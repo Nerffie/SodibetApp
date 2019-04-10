@@ -92,14 +92,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  <div class="slider-info col-lg-8">
 					<div class="agileinfo-logo mt-5">
 						<h2 data-aos="fade-down">
-							<span class="fab fa-blackberry text-center"></span> ${utilisateur.getPrenom() }&nbsp;${utilisateur.getNom() }
+						 ${utilisateur.getPrenom() }&nbsp;${utilisateur.getNom() }
 						</h2>
 					</div>
 					<h3 class="txt-w3_agile" data-aos="fade-down">${utilisateur.getCategorie()}</h3>
 					<h1></h1>
-						 <!--  <a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">Login</a>
-					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="About" data-toggle="modal" data-target="#exampleModalCenter1" role="button">Plus D'infos</a>
-				-->
+						
 				</div>
 			</div>
 		</div>
