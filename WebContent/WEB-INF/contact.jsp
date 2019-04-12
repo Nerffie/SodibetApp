@@ -100,11 +100,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer-grid_section text-center" data-aos="zoom-in">
 				<div class="footer-title mb-3">
 					<a href="//www.sodibet.com/" target="_blank">SODIBET</a>
+					<div class ="row" style="position: relative;left: 12%">
+				
+					
+					<img alt="Logo" src="inc/images/pic3.jpg" height="25%" width="25%"style="padding-left: 5%">
+					<img alt="Logo" src="inc/images/pic1.jpg" height="25%" width="25%"style="padding-left: 5%">
+					<img alt="Logo" src="inc/images/pic2.jpg" height="25%" width="25%"style="padding-left: 5%">
+				</div>
 				</div>
 				<div class="footer-text">
 					<p>Le spécialiste du plancher aux normes parasismiques :
 
-- Sodibet conçoit, produit et commercialise des planchers préfabriqués conformes aux réglementations en vigueur qu'elles soient marocaines (NM) ou européennes (BAEL, CPT Planchers, eurocodes) et particulièrement aux normes parasismiques (RPS et PS)</p>
+- Sodibet conçoit, produit et commercialise des planchers préfabriqués conformes aux réglementations en vigueur qu'elles soient marocaines (NM) ou europèennes (BAEL, CPT Planchers, eurocodes) et particulièrement aux normes parasismiques (RPS et PS)</p>
 				</div>
 				<ul class="social_section_1info">
 					<li class="mb-2 facebook"><a href="#"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
