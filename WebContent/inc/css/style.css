@@ -76,7 +76,7 @@ header.index-banner {
 
 button.btn.w3ls-btn {
     padding: 8px 29px;
-    background: #00BCD4;
+    background: #ff6600;
     color: #eee;
     font-weight: 500;
     border: none;
@@ -105,7 +105,7 @@ nav.main-header.navShadow {
   -webkit-box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
   height: 80px;
-     background: #00BCD4;
+     background: #ff6600;
 }
 
 nav.navShadow #word-mark {
@@ -130,7 +130,7 @@ ul.nav-agile {
 #logo {
   width: 55px;
   height: 55px;
-  background: #00BCD4;
+  background: #ff6600;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -186,7 +186,7 @@ div#word-mark h1 a {
 #menu-toggle {
   width: 55px;
   height: 55px;
-  background: #00BCD4;
+  background: #ff6600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +245,7 @@ div#word-mark h1 a {
 
 #hero-section {
   width: 100vw;
-  background: url(../images/banner.jpg) no-repeat center;
+  background: url(../images/bg.png) no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 0;
@@ -261,7 +261,7 @@ div#word-mark h1 a {
 }
 
 li.breadcrumb-item a {
-  color: #1e2d3a;
+  color:#ff8533;
   font-weight: 800;
 }
 
@@ -397,7 +397,7 @@ section {
 
 
 .banner {
-    background: url(../images/banner.jpg)no-repeat center;
+    background: url(../images/bg.png)no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -449,8 +449,8 @@ section {
     border-radius: 0;
 }
 .slider-info a.btn:hover {
-    border: 2px solid #00bcd4;
-    color: #00bcd4;
+    border: 2px solid #ff6600;
+    color: #ff6600;
 }
 h3.txt-w3_agile {
     font-size: 3.2em;
@@ -479,7 +479,7 @@ h3.txt-w3_agile {
     outline: none;
     font-size: 16px;
     padding: 0.8em 1em;
-    border: 1px solid #e6eae8;
+    border: 1px solid #ff944d;
     -webkit-appearance: none;
     margin-bottom: 0.8em;
     letter-spacing: 1px;
@@ -491,9 +491,9 @@ h3.txt-w3_agile {
     padding: .8em 1em;
     font-size: 16px;
     cursor: pointer;
-    border: 2px solid #00BCD4;
+    border: 2px solid #ff6600;
     outline: none;
-    background: #00BCD4;
+    background: #ff6600;
     width: 100%;
     letter-spacing: 1px;
     transition: 0.5s all;
@@ -569,7 +569,7 @@ h3.txt-w3_agile {
       font-size: 1em;
     width: 55px;
     height: 55px;
-    background: #00BCD4;
+    background: #ff6600;
     border-radius: 50%;
     cursor: pointer;
     text-align: center;
@@ -578,8 +578,8 @@ h3.txt-w3_agile {
 }
 .btn-primary {
     color: #fff;
-    background-color: #00bcd4;
-    border-color: #00bcd4;
+    background-color: #ff6600;
+    border-color: #ff6600;
     border-radius: 0;
     padding: 8px 25px;
 }
@@ -617,13 +617,13 @@ ul.partners-icon li i {
     font-size: 5em;
 }
 .clr1 {
-    color: #30c39e;
+    color:#ff6600;
 }
 .clr2 {
     color: #ffc168;
 }
 .clr3 {
-    color: #00bce4;
+    color: #cc5200;
 }
 .clr4 {
     color: #fd5c63;
@@ -665,10 +665,10 @@ h3.heading {
 	color: #ff4f81;
 }
 .icon2 i{
-	color: #00aeff;
+	color: #cc5200;
 }
 .icon3 i{
-	color: #2dde98;
+	color: #ff751a;
 }
 .f1{
     box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
@@ -677,7 +677,7 @@ h3.heading {
 
 /*-- quote --*/
 .quote{
-    background: #00BCD4;
+    background: #ff6600;
 }
 .quote h4 {
     font-size: 34px;
@@ -691,7 +691,7 @@ h3.heading {
 	float:left;
 }
 .quote a {
-    background: #00bcd4;
+    background: #ff6600;
     color: #fff;
     padding: 10px 30px;
     display: inline-block;
@@ -783,7 +783,7 @@ ul.list-unstyled li {
 
 .price-inner .log-in a {
     font-size: 15px;
-    background: #00bcd4;
+    background: #ff6600;
     border-radius: 0;
     letter-spacing: 1px;
     color: #fff;
@@ -839,7 +839,7 @@ ul.list-unstyled li {
 }
 
 p.sub-meta {
-    color: #1cbbb4;
+    color: #ff751a;
     font-size: 1.2em;
     font-weight: 600;
 }
@@ -907,7 +907,7 @@ ul.faq p {
 }
 .contact input[type="submit"] {
     font-size: 16px;
-    background: #00bcd4;
+    background: #ff6600;
     border-radius: 0;
     letter-spacing: 1px;
     color: #fff;
@@ -1101,7 +1101,7 @@ ul.links li a:hover{
     font-size: 1em;
     width: 55px;
     height: 55px;
-    background: #00BCD4;
+    background: #ff6600;
     border-radius: 50%;
     cursor: pointer;
     text-align: center;
@@ -1356,7 +1356,7 @@ ul.callbacks_tabs {
 }
 ul.d-flex li i {
     font-size: 14px;
-    color: #00bcd4;
+    color: #ff6600;
 }
 .testi-agile h4 {
 	color: #fff;
