@@ -103,9 +103,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class ="row" style="position: relative;left: 12%">
 				
 					
-					<img alt="Logo" src="inc/images/pic3.jpg" height="25%" width="25%"style="padding-left: 5%">
-					<img alt="Logo" src="inc/images/pic1.jpg" height="25%" width="25%"style="padding-left: 5%">
-					<img alt="Logo" src="inc/images/pic2.jpg" height="25%" width="25%"style="padding-left: 5%">
+					<img alt="Logo" src="inc/images/pic3.png" height="25%" width="25%"style="padding-left: 5%">
+					<img alt="Logo" src="inc/images/pic1.png" height="25%" width="25%"style="padding-left: 5%">
+					<img alt="Logo" src="inc/images/pic2.png" height="25%" width="25%"style="padding-left: 5%">
 				</div>
 				</div>
 				<div class="footer-text">
