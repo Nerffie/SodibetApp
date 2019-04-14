@@ -92,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </header>
 
-	</div></section>-->
+	</div></section>
 	
 	<section class="choose py-5" id="choose">
 	<div class="container py-md-3">
