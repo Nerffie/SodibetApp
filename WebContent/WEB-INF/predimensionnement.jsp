@@ -41,15 +41,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- nav -->
     <nav class="main-header">
       <div id="brand" data-aos="zoom-in-up">
-        <div id="logo">
-          <a href="Home">
-            <i class="fab fa-blackberry"></i>
-          </a>
-        </div>
         <div id="word-mark">
-          <h1>
-            <a href="Home">SODIBET</a>
-          </h1>
+          <a href="Home"> 
+            <img alt="" src="inc/images/logosodibet.png">
+          </a>
         </div>
       </div>
       <div id="menu">
@@ -96,22 +91,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div><div class="container py-md-3">
 	</div>
 </header>
-<!--  <section class="contact py-5" id="contact"><div class="container py-lg-3">
-		
-			<div class="row banner-text">
-				  <div class="">
-					<ul>
-					<li><a class="btn mt-4 text-capitalize" data-aos="fade-up" href="Portee"  role="button">Détermination de la portée limite par la flèche</a></li>
-					<li><a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="Epaisseur"  role="button">Détermination de l'épaisseur du plancher</a></li>
-					<li><a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="Hauteur"  role="button">Calcul de la hauteur sous plafond nette</a></li>
-					<li><a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="Litrage" role="button">Calcul du litrage</a></li>
-					</ul>
-				</div>
-			</div>
-		
-		
-		
-		
+
 	</div></section>-->
 	
 	<section class="choose py-5" id="choose">
@@ -121,7 +101,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-lg-4 col-md-6" data-aos="fade-right">
 				<a href="Portee">
 				<div class="f1 icon1 p-4">
-					<i class="fab fa-bandcamp"></i>
+					<img alt="porteeImage" src="inc/images/portee.jpg" width="25%" height="25%">
 					<h3 class="my-3">Portée limite</h3>
 					<p>Détermination de la portée limite par la flèche</p>
 				</div>
@@ -130,7 +110,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-lg-4 col-md-6" data-aos="fade-up">
 				<a href="Epaisseur">
 				<div class="f1 icon2 p-4">
-					<i class="fab fa-bandcamp"></i>
+					<img alt="epaisseurImage" src="inc/images/epaisseur.jpg" width="25%" height="25%">
 					<h3 class="my-3">Epaisseur du plancher</h3>
 					<p>Détermination de l'épaisseur du plancher</p>
 				</div>
@@ -139,7 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-left">
 				<a href="Hauteur">
 				<div class="f1 icon3 p-4">
-					<i class="fab fa-bandcamp"></i>
+					<img alt="hauteurImage" src="inc/images/hauteur.jpg" width="25%" height="25%">
 					<h3 class="my-3">Hauteur sous plafond</h3>
 					<p>Calcul de la hauteur sous plafond nette</p>
 				</div>
@@ -149,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4 " data-aos="fade-left">
 				<a href="Litrage">
 				<div class="f1 icon2 p-4">
-					<i class="fab fa-bandcamp"></i>
+					<img alt="litrageImage" src="inc/images/litrage.jpg" width="25%" height="25%">
 					<h3 class="my-3">Litrage</h3>
 					<p>Calcul du litrage</p>
 				</div>

@@ -69,15 +69,10 @@ table#t01 th {
     <!-- nav -->
     <nav class="main-header">
       <div id="brand" data-aos="zoom-in-up">
-        <div id="logo">
-          <a href="Home">
-            <i class="fab fa-blackberry"></i>
-          </a>
-        </div>
         <div id="word-mark">
-          <h1>
-            <a href="Home">SODIBET</a>
-          </h1>
+          <a href="Home"> 
+            <img alt="" src="inc/images/logosodibet.png">
+          </a>
         </div>
       </div>
       <div id="menu">
