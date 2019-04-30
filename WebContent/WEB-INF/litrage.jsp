@@ -110,7 +110,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<option class="form-control" value="16">16
 						<option class="form-control" value="20">20
 						<option class="form-control" value="25">25
-						<option class="form-control" value="30">30
+						<!--<option class="form-control" value="30">30-->
 					</select>
 				</div>
 				
@@ -151,7 +151,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<option class="form-control" value="9">9
 								<option class="form-control" value="10">10
 					</select>
-					<select class="form-control" name="epaisseurY30" id="epaisseur30" style="display:none;">
+					<!--<select class="form-control" name="epaisseurY30" id="epaisseur30" style="display:none;">
 							
 								<option class="form-control" value="5">5
 								<option class="form-control" value="6">6
@@ -159,7 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<option class="form-control" value="8">8
 								<option class="form-control" value="9">9
 								<option class="form-control" value="10">10
-					</select>
+					</select>-->
 					
 				</div> 
 			</div><!-- end of row -->
@@ -255,37 +255,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         	document.getElementById("epaisseur16").style.display = "none";
         	document.getElementById("epaisseur20").style.display = "none";
         	document.getElementById("epaisseur25").style.display = "none";
-        	document.getElementById("epaisseur30").style.display = "none";
+        	//document.getElementById("epaisseur30").style.display = "none";
             document.getElementById("epaisseur12").style.display = "block";
         }
         else if(that.value=="16") {
         	document.getElementById("epaisseur12").style.display = "none";
         	document.getElementById("epaisseur20").style.display = "none";
         	document.getElementById("epaisseur25").style.display = "none";
-        	document.getElementById("epaisseur30").style.display = "none";
+        	//document.getElementById("epaisseur30").style.display = "none";
             document.getElementById("epaisseur16").style.display = "block";
         }
         else if(that.value=="20") {
         	document.getElementById("epaisseur12").style.display = "none";
         	document.getElementById("epaisseur16").style.display = "none";
         	document.getElementById("epaisseur25").style.display = "none";
-        	document.getElementById("epaisseur30").style.display = "none";
+        	//document.getElementById("epaisseur30").style.display = "none";
             document.getElementById("epaisseur20").style.display = "block";
         }
         else if(that.value=="25") {
         	document.getElementById("epaisseur12").style.display = "none";
         	document.getElementById("epaisseur16").style.display = "none";
         	document.getElementById("epaisseur20").style.display = "none";
-        	document.getElementById("epaisseur30").style.display = "none";
+        	//document.getElementById("epaisseur30").style.display = "none";
             document.getElementById("epaisseur25").style.display = "block";
         }
-        else{
+        /*else{
         	document.getElementById("epaisseur12").style.display = "none";
         	document.getElementById("epaisseur16").style.display = "none";
         	document.getElementById("epaisseur20").style.display = "none";
         	document.getElementById("epaisseur25").style.display = "none";
             document.getElementById("epaisseur30").style.display = "block";
-        }
+        }*/
     }
 </script>
 	<!-- sticky nav bar-->
