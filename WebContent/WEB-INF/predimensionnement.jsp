@@ -80,19 +80,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
     </nav>
     <!-- //nav -->
+    </header>
 	<!-- banner -->
 	<div class="banner layer" id="home">
 		<div class="container">
 			<!-- banner bottom -->
-			<br>
 			</div>
 <!-- //banner -->
 <section class="banner-bottom py-5">
-</div><div class="container py-md-3">
-	</div>
-</header>
-
-	</div></section>
+</section>
+</div><div class="container py-md-3"></div>
 	
 	<section class="choose py-5" id="choose">
 	<div class="container py-md-3">

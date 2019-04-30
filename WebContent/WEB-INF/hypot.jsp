@@ -79,6 +79,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </ul>
       </div>
     </nav>
+    </header>
     <!-- //nav -->
 
 	<!-- banner -->
@@ -86,11 +87,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<!-- banner bottom -->
 			</div>
-	<br>		
+			
 <section class="banner-bottom py-5">
-	</div><div class="container py-md-3">
-	</div>
 </section>
+</div><div class="container py-md-3"></div>
 <!-- //banner bottom -->
 
 <!-- why choose us -->
@@ -130,9 +130,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </section>
 <!-- //why choose us -->
-</div>
 
-</section>
     <!-- js -->
     <script src="inc/js/jquery-2.2.3.min.js"></script>
     <script src="inc/js/bootstrap.js"></script>
