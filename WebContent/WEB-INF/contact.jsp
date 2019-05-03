@@ -109,12 +109,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 - Sodibet conçoit, produit et commercialise des planchers préfabriqués conformes aux réglementations en vigueur qu'elles soient marocaines (NM) ou europèennes (BAEL, CPT Planchers, eurocodes) et particulièrement aux normes parasismiques (RPS et PS)</p>
 				</div>
-				<ul class="social_section_1info">
-					<li class="mb-2 facebook"><a href="#"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
-					<li class="mb-2 twitter"><a href="#"><i class="fab mr-1 fa-twitter"></i>twitter</a></li>
-					<li class="google"><a href="#"><i class="fab mr-1 fa-google-plus-g"></i>google</a></li>
-					<li class="linkedin"><a href="#"><i class="fab mr-1 fa-linkedin-in"></i>linkedin</a></li>
-				</ul>
 			</div>
 			
 		<div class="row footer-top mt-md-5 mt-4">
@@ -136,7 +130,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="footer-text">
 					<p>Email : <a href="mailto:mehdi.maachi@sodibet.com">mehdi.maachi@sodibet.com</a></p>
 					<p>Email : <a href="mailto:amine.maachi@sodibet.com">amine.maachi@sodibet.com</a></p>
-					<p>Fax : ???</p>
+					<p>Fax : 05.37.74.10.72</p>
 					
 				</div>
 			</div>

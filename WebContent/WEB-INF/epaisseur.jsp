@@ -144,7 +144,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</button>
 			</div>
 			<div class="modal-body">
-				Brève Explication sur ce que c'est l'épaisseur
+				Cette fonctionnalité permet de déterminer l'épaisseur minimale qui permet d'atteindre une portée cible pour des charges d'exploitation données.
 			</div>
 			<div class="modal-footer">
 			<form method="post" action="#"><input type="submit" class ="btn btn-primary" name="dontShow" value="Ne plus afficher">
