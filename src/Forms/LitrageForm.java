@@ -40,7 +40,7 @@ public class LitrageForm {
 	    	int epaisseurY = getEpaisseurY(epaisseurX,request);
 	    	float superficie = Float.parseFloat(getValeurChamp(request, CHAMP_SUPERFICIE));
 	    	float consommation = litrageDao.chercherConsommation(epaisseurX, epaisseurY);
-	    	resultat.add(consommation * superficie);
+	    	resultat.add(consommation * superficie / 1000);
 	    	resultat.add((float)epaisseurX);
 	    	resultat.add((float)epaisseurY);
 	    	

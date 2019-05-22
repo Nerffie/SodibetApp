@@ -79,6 +79,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </ul>
       </div>
     </nav>
+    </header>
     <!-- //nav -->
 
 	<!-- banner -->
@@ -86,15 +87,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<!-- banner bottom -->
 			</div>
-	<br>		
 <section class="banner-bottom py-5">
-	</div><!--footer -->
-<footer>
-<section class="footer footer_w3layouts_section_1its py-5">
+</section>
+</div><div class="container py-md-3"></div>
+
+<section class="contact py-5" id="contact">
 	<div class="container py-md-4">
 	<div class="footer-grid_section text-center" data-aos="zoom-in">
-				<div class="footer-title mb-3">
-					<a href="//www.sodibet.com/" target="_blank">SODIBET</a>
+				<div class="mb-3">
+					<a href="//www.sodibet.com/" target="_blank"><h3 class="heading mb-5 text-center" data-aos="zoom-in">SODIBET</h3></a>
 					<div class ="row" style="position: relative;left: 12%">
 				
 					
@@ -108,12 +109,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 - Sodibet conçoit, produit et commercialise des planchers préfabriqués conformes aux réglementations en vigueur qu'elles soient marocaines (NM) ou europèennes (BAEL, CPT Planchers, eurocodes) et particulièrement aux normes parasismiques (RPS et PS)</p>
 				</div>
-				<ul class="social_section_1info">
-					<li class="mb-2 facebook"><a href="#"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
-					<li class="mb-2 twitter"><a href="#"><i class="fab mr-1 fa-twitter"></i>twitter</a></li>
-					<li class="google"><a href="#"><i class="fab mr-1 fa-google-plus-g"></i>google</a></li>
-					<li class="linkedin"><a href="#"><i class="fab mr-1 fa-linkedin-in"></i>linkedin</a></li>
-				</ul>
 			</div>
 			
 		<div class="row footer-top mt-md-5 mt-4">
@@ -135,14 +130,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="footer-text">
 					<p>Email : <a href="mailto:mehdi.maachi@sodibet.com">mehdi.maachi@sodibet.com</a></p>
 					<p>Email : <a href="mailto:amine.maachi@sodibet.com">amine.maachi@sodibet.com</a></p>
-					<p>Fax : ???</p>
+					<p>Fax : 05.37.74.10.72</p>
 					
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-</footer>
+
 <!-- //footer -->
 
 <!-- copyright -->

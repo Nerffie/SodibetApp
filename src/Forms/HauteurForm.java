@@ -35,7 +35,7 @@ public class HauteurForm {
 	    		setErreur( CHAMP_ERREUR_CONDITION, "Veuillez vérifier la condition FP>=G+5" );
 	    	}
 	    	else{
-	    		resultat = hspb-fp-ep-5;
+	    		resultat = (hspb-fp-ep-5)/100;
 	    	}
 	    }	
 	    	catch(NumberFormatException e) {

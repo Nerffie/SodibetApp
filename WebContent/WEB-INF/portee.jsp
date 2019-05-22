@@ -178,7 +178,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</button>
 			</div>
 			<div class="modal-body">
-				Brève Explication sur ce que c'est la portée
+				Cette fonctionnalité permet de calculer la portée maximale permise pour une épaisseur de plancher et des charges d'exploitation données.
 			</div>
 			<div class="modal-footer">
 			<form method="post" action="#"><input type="submit" class ="btn btn-primary" name="dontShow" value="Ne plus afficher">

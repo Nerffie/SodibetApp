@@ -142,7 +142,7 @@ table#t01 th {
     
   </tr>
 </table><br>
-<h4>Hauteur sous plafond nette : ${resultat}</h4>
+<h4>Hauteur sous plafond nette : ${resultat} mètre</h4>
 
 				
 <div class="click text-center mt-3">

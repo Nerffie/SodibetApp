@@ -146,7 +146,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</button>
 			</div>
 			<div class="modal-body">
-				Brève Explication sur ce que c'est la hauteur
+				Cette fonctionnalité permet de calculer la hauteur sous plafond nette.
 			</div>
 			<div class="modal-footer">
 			<form method="post" action="#"><input type="submit" class ="btn btn-primary" name="dontShow" value="Ne plus afficher">

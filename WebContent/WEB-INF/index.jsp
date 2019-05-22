@@ -80,29 +80,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
     </nav>
     <!-- //nav -->
-	<!-- banner -->
-	<div class="banner layer" id="home">
-		<div class="container">
-			<div class="row banner-text">
-				  <div class="slider-info col-lg-8">
-					<div class="agileinfo-logo mt-5">
-						<h2 data-aos="fade-down">
-						 ${utilisateur.getPrenom() }&nbsp;${utilisateur.getNom() }
-						</h2>
-					</div>
-					<h3 class="txt-w3_agile" data-aos="fade-down">${utilisateur.getCategorie()}</h3>
-					<h1></h1>
-						
-				</div>
-			</div>
-		</div>
-		
-		
-		
-	</div>
-	<!-- //banner -->
-</header>
-<!-- //header -->
+	</header>
+<!-- banner -->
+
+	<div class="banner layer" id="home" >
+            <div class="container">
+                    <div class="row banner-text" >
+                    <div class="slider-info col-lg-8">
+                          <div class="agileinfo-logo mt-5">
+                                <h2 data-aos="fade-down">
+                                 ${utilisateur.getPrenom() }&nbsp;${utilisateur.getNom() }
+                                </h2>
+                                
+                            </div>
+                            <h3 class="txt-w3_agile" data-aos="fade-down">${utilisateur.getCategorie()}</h3>
+                     </div>
+                     
+                    </div>
+                    <div class ="row" data-aos="fade-left" style="position: relative;left: 12%;padding-bottom:5%">
+					 <img alt="Logo" src="inc/images/pic3.jpg" height="25%" width="25%"style="padding-left: 5%">
+        <img alt="Logo" src="inc/images/pic1.jpg" height="25%" width="25%"style="padding-left: 5%">
+        <img alt="Logo" src="inc/images/pic2.jpg" height="25%" width="25%"style="padding-left: 5%">
+    </div>
+          <br>          
+            </div>
+	</div>   
+
+<!-- //banner -->
+
+
 
     <!-- js -->
     <script src="inc/js/jquery-2.2.3.min.js"></script>
