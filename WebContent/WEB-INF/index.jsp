@@ -32,7 +32,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- google fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 	<!-- //google fonts -->
-	
+	<style>
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .another{
+ min-height: 100vh;
+}
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  
+  
+}
+  </style>
 </head>
 <body>
 
@@ -82,10 +104,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //nav -->
 	</header>
 <!-- banner -->
-
-	<div class="banner layer" id="home" >
+	
+	<div class="banner layer fullscreen" id="home" >
             <div class="container">
-                    <div class="row banner-text" >
+                    <div class="row banner-text" style="padding-bottom:5%">
                     <div class="slider-info col-lg-8">
                           <div class="agileinfo-logo mt-5">
                                 <h2 data-aos="fade-down">
@@ -97,14 +119,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                      </div>
                      
                     </div>
-                    <div class ="row" data-aos="fade-left" style="position: relative;left: 12%;padding-bottom:5%">
+                    
+                   <div class="feature-grids row">
+			<div class="col-lg-4 col-md-6">
+					<div class="f1 p-4">
+					<img alt="Image Accueil 1" src="inc/images/pic1.jpg" width="100%" height="100%">
+					</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+					<div class="f1 p-4">
+					<img alt="Image Accueil 2" src="inc/images/pic2.jpg" width="100%" height="100%">
+					</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+					<div class="f1 p-4">
+					<img alt="Image Accueil 3" src="inc/images/pic3.jpg" width="100%" height="100%">
+					</div>
+			</div>
+			
+                    <!--  <div class ="row" data-aos="fade-left" style="position: relative;left: 12%;padding-bottom:5%">
 					 <img alt="Logo" src="inc/images/pic3.jpg" height="25%" width="25%"style="padding-left: 5%">
         <img alt="Logo" src="inc/images/pic1.jpg" height="25%" width="25%"style="padding-left: 5%">
         <img alt="Logo" src="inc/images/pic2.jpg" height="25%" width="25%"style="padding-left: 5%">
+    </div>-->
+   </div>
+   
     </div>
-          <br>          
-            </div>
-	</div>   
+  
+    </div>
+
 
 <!-- //banner -->
 

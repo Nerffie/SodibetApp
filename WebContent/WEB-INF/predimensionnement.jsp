@@ -112,17 +112,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p>Détermination de l'épaisseur du plancher</p>
 				</div>
 				</a>
-			</div>
-			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-left">
-				<a href="Hauteur">
-				<div class="f1 icon3 p-4">
-					<img alt="hauteurImage" src="inc/images/hauteur.jpg" width="25%" height="25%">
-					<h3 class="my-3">Hauteur sous plafond</h3>
-					<p>Calcul de la hauteur sous plafond nette</p>
-				</div>
-				</a>
-			</div>
-			
+			</div>		
 			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4 " data-aos="fade-left">
 				<a href="Litrage">
 				<div class="f1 icon2 p-4">

@@ -59,10 +59,6 @@
   <servlet-class>Srv.UsersData</servlet-class>
  </servlet>
  <servlet>
-  <servlet-name>Hauteur</servlet-name>
-  <servlet-class>Srv.Hauteur</servlet-class>
- </servlet>
- <servlet>
   <servlet-name>Litrage</servlet-name>
   <servlet-class>Srv.Litrage</servlet-class>
  </servlet>
@@ -126,10 +122,6 @@
  <servlet-mapping>
   <servlet-name>UsersData</servlet-name>
   <url-pattern>/UsersData</url-pattern>
- </servlet-mapping>
- <servlet-mapping>
-  <servlet-name>Hauteur</servlet-name>
-  <url-pattern>/Hauteur</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
   <servlet-name>Litrage</servlet-name>
