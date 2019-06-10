@@ -21,7 +21,8 @@ public class Index extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		HttpSession session = req.getSession();
-		
+		StringBuilder requestURL = new StringBuilder(req.getRequestURL().toString());
+		System.out.println(requestURL.toString());
 		if (session.getAttribute(ATT_USER)!=null) {
 			this.getServletContext().getRequestDispatcher("/WEB-INF/index.jsp").forward(req, resp);
 		}
