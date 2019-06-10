@@ -79,7 +79,7 @@ public class Mail {
 			message.setSubject("Validation du compte Sodibet");
 			message.setText("Bonjour "+utilisateur.getNom()+" "+utilisateur.getPrenom()+"\n\n"+"Merci d'avoir créer un compte chez Sodibet,"
 				+ "\n\n Pour valider votre inscription, veuillez cliquez sur le lien suivant!"
-					+"\n\n"+url+"/Verify?key="+utilisateur.getValide_hash());
+					+"\n\n"+url+"/Sodibet/Verify?key="+utilisateur.getValide_hash());
 
 			Transport.send(message);
 
