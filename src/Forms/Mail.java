@@ -18,20 +18,22 @@ import Dao.DAOConfigurationException;
 public class Mail {
 	//private final String username="testsodibet@gmail.com";
 	//private final String password="sodibettesting";
-	private static final String PROPERTY_URL             = "url";
+	//private static final String PROPERTY_URL             = "url";
     //private static final String PROPERTY_DRIVER          = "driver";
     private static final String PROPERTY_NOM_UTILISATEUR = "nomutilisateur";
     private static final String PROPERTY_MOT_DE_PASSE    = "motdepasse";
     private static final String FICHIER_PROPERTIES       = "/Forms/mail.properties";
 	private Utilisateur utilisateur;
+	private String url;
 	
-	public Mail(Utilisateur utilisateur) {
+	public Mail(Utilisateur utilisateur,String url) {
 		this.utilisateur=utilisateur;
+		this.url = url;
 	}
 	
 	public void sendMail() {
 		Properties properties = new Properties();
-        String url;
+        
         //String driver;
         
         String nomUtilisateur;
@@ -46,7 +48,7 @@ public class Mail {
 
         try {
             properties.load( fichierProperties );
-            url = properties.getProperty( PROPERTY_URL );
+            //url = properties.getProperty( PROPERTY_URL );
             //driver = properties.getProperty( PROPERTY_DRIVER );
             nomUtilisateur = properties.getProperty( PROPERTY_NOM_UTILISATEUR );
             motDePasse = properties.getProperty( PROPERTY_MOT_DE_PASSE );

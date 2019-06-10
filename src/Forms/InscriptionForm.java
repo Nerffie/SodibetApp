@@ -1,5 +1,6 @@
 package Forms;
 
+
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -7,6 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+
+
 import org.jasypt.util.password.ConfigurablePasswordEncryptor;
 
 import Beans.Utilisateur;
@@ -28,11 +31,13 @@ public class InscriptionForm {
 	
 	private String resultat;
 	private UtilisateurDao      utilisateurDao;
+	private HttpServletRequest req;
 	private Map<String, String> erreurs      = new HashMap<String, String>();
 
 
-	public InscriptionForm( UtilisateurDao utilisateurDao ) {
+	public InscriptionForm( UtilisateurDao utilisateurDao, HttpServletRequest req ) {
 	    this.utilisateurDao = utilisateurDao;
+	    this.req = req;
 	}
 	
 	public String getResultat() {
@@ -83,7 +88,8 @@ public class InscriptionForm {
 	    	utilisateurDao.creer(utilisateur);
 	        resultat = "Succès de l'inscription.";
 	        //send mail
-	        new Mail(utilisateur).sendMail();
+	        String path = req.getRequestURL().toString().replace("/Sodibet/SignUp", "");
+	        new Mail(utilisateur,path).sendMail();
 	    } else {
 	        resultat = "Échec de l'inscription.";
 	    }

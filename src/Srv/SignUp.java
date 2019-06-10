@@ -44,7 +44,7 @@ public class SignUp extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		 /* Préparation de l'objet formulaire */
-        InscriptionForm form = new InscriptionForm(utilisateurDao);
+        InscriptionForm form = new InscriptionForm(utilisateurDao,req);
 		
         /* Appel au traitement et à la validation de la requête, et récupération du bean en résultant */
         Utilisateur utilisateur = form.inscrireUtilisateur(req);
