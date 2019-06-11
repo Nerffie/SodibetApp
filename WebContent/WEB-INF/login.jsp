@@ -34,6 +34,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //google fonts -->
 	
 </head>
+<style>
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .another{
+ min-height: 100vh;
+}
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  
+  
+}
+  </style>
 <body>
 
 <!-- header -->
@@ -59,9 +82,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </nav>
     <!-- //nav -->
 	<!-- banner -->
-	<div class="banner layer" id="home">
+	<div class="banner layer another" id="home">
 		<div class="container">
-			<div class="row banner-text" >
+			<div class="row banner-text">
 				<div class="col-lg-4 col-md-2 mt-lg-0 mt-5 banner-form" data-aos="fade-right"></div>
 				<div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
 				<br>
@@ -77,7 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input class="form-control text-capitalize" type="submit" value="Connexion">
 					</form>
 					<a href="SignUp"><i class="fas mr-2">Vous n'avez pas de compte ?</i></a>
-						<br><br><br><br><br><br>
+						
 				</div>
 			</div>
 		</div>

@@ -105,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</header>
 <!-- banner -->
 	
-	<div class="banner layer fullscreen" id="home" >
+	<div class="banner layer another" id="home" >
             <div class="container">
                     <div class="row banner-text" style="padding-bottom:5%">
                     <div class="slider-info col-lg-8">
