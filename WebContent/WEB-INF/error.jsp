@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Espace Administrateur</title>
+<title>Oups !</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -78,6 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="bar"></div>
           </div>
         </div>
+        
       </div>
     </nav>
     <!-- //nav -->
@@ -88,18 +89,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-lg-4 col-md-2 mt-lg-0 mt-5 banner-form" data-aos="fade-right"></div>
 				<div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
 				<br>
-					<h5><i class="fas mr-2 fa-laptop"></i>Administration !</h5>
+				<h3 class="heading mb-5 text-center" data-aos="zoom-in">Erreur</h3>
+					<h1 class="heading mb-5 text-center" data-aos="zoom-in">Cette page n'existe pas</h1>
 					<br>
-					<form action="#" class="mt-4" method="post">
-						
-						<input class="form-control" type="text" name="id" placeholder="Admin ID" required />
-						<span class="erreur">${form.erreurs['id']}</span>
-						
-						<input class="form-control" type="password" name="password" placeholder="Mot de passe" required/>
-						<span class="erreur">${form.erreurs['password']}</span>
-						<input class="form-control text-capitalize" type="submit" value="Connexion">
-					</form>
-					
 						
 				</div>
 			</div>

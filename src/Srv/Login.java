@@ -42,7 +42,7 @@ public class Login extends HttpServlet {
 		// TODO Auto-generated method stub
 		HttpSession session = req.getSession();
 		if (session.getAttribute(ATT_USER)!=null) {
-			resp.sendRedirect("Index");
+			resp.sendRedirect("Home");
 		}
 		else {
 			this.getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(req, resp);
