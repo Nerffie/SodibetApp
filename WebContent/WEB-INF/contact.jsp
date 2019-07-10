@@ -66,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Ask" class="active">Posez une question</a>
           </li>
           <li>
-            <a href="Contact" class="active">Contact</a>
+            <a href="Contact" class="active"><u><b>Contact</b></u></a>
           </li>
              <li>
             <a href="Plaquette" class="active">Plaquette</a>

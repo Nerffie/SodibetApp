@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
              <li>
-            <a href="Hypotheses" class="active">Hypothéses</a>
+            <a href="Hypotheses" class="active"><u><b>Hypothéses</b></u></a>
           </li>
              <li>
             <a href="Ask" class="active">Posez une question</a>
