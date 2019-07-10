@@ -96,15 +96,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 					<select class="form-control" name="categorie" id="categorie" onchange="sous_categorie_show(this);" required>
 						<option class="form-control" value="architecte">Architecte
-						<option class="form-control" value="ingenieur">Ingénieur
+						<option class="form-control" value="ingénieur">Ingénieur
 					</select>
 					
 					
 					<!--  <td><label class="form-control" for="sous_categorie">Spécifiez votre choix</label></td>-->
 					<div>
 							<select class="form-control" name="sous_categorie_architecte" id="sous_categorie_architecte" style="display: block;">
-								<option class="form-control">Agence et bureaux d'architectures
-								<option class="form-control">Eleve architecte
+								<option class="form-control">Agence et bureaux d'architecture
+								<option class="form-control">Élève architecte
 							</select>
 					</div>
 					<div>
@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<option class="form-control">Bureaux de contrôle
 								<option class="form-control">Entreprise de construction
 								<option class="form-control">Laboratoires
-								<option class="form-control">Eleves ingénieurs
+								<option class="form-control">Élèves ingénieurs
 							</select>
 					</div>
 					<br>
@@ -255,7 +255,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             document.getElementById("sous_categorie_architecte").style.display = "block";
             document.getElementById("sous_categorie_ingenieur").style.display = "none";
         } else*/ 
-        if(that.value=="ingenieur") {
+        if(that.value=="ingénieur") {
             document.getElementById("sous_categorie_architecte").style.display = "none";
             document.getElementById("sous_categorie_ingenieur").style.display = "block";
         }

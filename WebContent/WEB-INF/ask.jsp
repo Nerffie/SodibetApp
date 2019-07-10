@@ -61,13 +61,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
              <li>
-            <a href="Hypotheses" class="active">Hypothéses</a>
+            <a href="Hypotheses" class="active">Hypothèses</a>
           </li>
              <li>
             <a href="Ask" class="active"><u><b>Posez une question</b></u></a>
           </li>
           <li>
-            <a href="Contact" class="active">Contact</a>
+            <a href="Contact" class="active">Contacts</a>
           </li>
              <li>
             <a href="Plaquette" class="active">Plaquette</a>
@@ -103,7 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<form action="#" method="post" data-aos="fade-up">
 			<div class="row">
 				<div class="col-md-12 styled-input mt-0">
-					<input type="text" name="sujet" placeholder="Sujet" required>
+					<input type="text" name="sujet" placeholder="Objet" required>
 				</div>
 				
 			</div>

@@ -66,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Ask" class="active">Posez une question</a>
           </li>
           <li>
-            <a href="Contact" class="active"><u><b>Contact</b></u></a>
+            <a href="Contact" class="active"><u><b>Contacts</b></u></a>
           </li>
              <li>
             <a href="Plaquette" class="active">Plaquette</a>
@@ -105,9 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				</div>
 				<div class="footer-text">
-					<p>Le spécialiste du plancher aux normes parasismiques :
-
-- Sodibet conçoit, produit et commercialise des planchers préfabriqués conformes aux réglementations en vigueur qu'elles soient marocaines (NM) ou europèennes (BAEL, CPT Planchers, eurocodes) et particulièrement aux normes parasismiques (RPS et PS)</p>
+					<p>Le spécialiste du plancher aux normes parasismiques : Sodibet conçoit, produit et commercialise des planchers préfabriqués conformes aux réglementations en vigueur qu'elles soient marocaines (NM 15037-1) ou européennes (BAEL, CPT Planchers, Eurocodes) et particulièrement aux normes parasismiques (RPS et PS)</p>
 				</div>
 			</div>
 			

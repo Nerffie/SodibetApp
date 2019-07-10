@@ -87,13 +87,13 @@ table#t01 th {
             <a href="Predimensionnement" class="active"><u><b>Prédimensionnement</b></u></a>
           </li>
              <li>
-            <a href="Hypotheses" class="active">Hypothéses</a>
+            <a href="Hypotheses" class="active">Hypothèses</a>
           </li>
              <li>
             <a href="Ask" class="active">Posez une question</a>
           </li>
           <li>
-            <a href="Contact" class="active">Contact</a>
+            <a href="Contact" class="active">Contacts</a>
           </li>
              <li>
            <a href="Plaquette" class="active">Plaquette</a>
@@ -120,7 +120,7 @@ table#t01 th {
 	<!-- //banner -->
 	
 </header>
-<h3 class="text-center">Charge : ${charge} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portee : ${portee}</h3>
+<h3 class="text-center">Charge : ${charge} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portée : ${portee}</h3>
 <section class="contact py-5" id="contact">
 
 	<div class="container py-lg-3">

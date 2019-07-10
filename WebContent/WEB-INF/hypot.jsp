@@ -60,13 +60,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
              <li>
-            <a href="Hypotheses" class="active"><u><b>Hypothéses</b></u></a>
+            <a href="Hypotheses" class="active"><u><b>Hypothèses</b></u></a>
           </li>
              <li>
             <a href="Ask" class="active">Posez une question</a>
           </li>
           <li>
-            <a href="Contact" class="active">Contact</a>
+            <a href="Contact" class="active">Contacts</a>
           </li>
              <li>
           <a href="Plaquette" class="active">Plaquette</a>
@@ -108,14 +108,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-lg-4 col-md-6" data-aos="fade-up">
 				<div class="f1 icon2 p-4">
 					<i class="fab fa-bandcamp"></i>
-					<h3 class="my-3">Les calculs</h3>
+					<h3 class="my-3">Calculs</h3>
 					<p>Les calculs sont menés suivant les règles BAEL 91 modifié 99 et CPT Plancher 96</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-left">
 				<div class="f1 icon3 p-4">
 					<i class="fab fa-bandcamp"></i>
-					<h3 class="my-3">Les sollicitations</h3>
+					<h3 class="my-3">Sollicitations</h3>
 					<p>Les sollicitations dans les calculs de continuité sont déterminées par la méthode CAQUOT minorée</p>
 				</div>
 			</div>

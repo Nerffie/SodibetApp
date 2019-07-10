@@ -107,7 +107,7 @@ public class InscriptionForm {
 	private String getSousCategorie(HttpServletRequest request, String categorie) {
 		switch (categorie) {
 		case "architecte" : return getValeurChamp(request, CHAMP_SOUS_CATEGORIE[0]);
-		case "ingenieur" : return getValeurChamp(request, CHAMP_SOUS_CATEGORIE[1]);
+		case "ingénieur" : return getValeurChamp(request, CHAMP_SOUS_CATEGORIE[1]);
 		}
 		return null;
 	}
