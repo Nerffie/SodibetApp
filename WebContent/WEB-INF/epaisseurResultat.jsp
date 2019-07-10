@@ -32,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="inc/css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
     <link href="inc/css/fontawesome-all.css" rel="stylesheet"><!-- fontawesome css -->
 	<!-- //css files -->
-	
+	<link href="inc/images/favicon.png" type="image/x-icon" rel="shortcut icon">
 	<!-- google fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 	<!-- //google fonts -->
