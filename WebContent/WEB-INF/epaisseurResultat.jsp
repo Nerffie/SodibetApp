@@ -149,7 +149,7 @@ table#t01 th {
     
   </tr>
   <tr>
-    <td>jumelée</td>
+    <td>Jumelée</td>
     <td>
     <c:choose>
 	    <c:when test="${empty resultat.get(1)}">
@@ -177,14 +177,14 @@ table#t01 th {
   </tr>
    <tr>
     
-    <td>jumelée</td>
+    <td>Jumelée</td>
     <td>
     <c:choose>
 	    <c:when test="${empty resultat.get(3)}">
 	        Aucune valeur
 	    </c:when>    
 	    <c:otherwise>
-	         ${resultat.get(3).get(0).get(0)} &nbsp;+&nbsp; ${resultat.get(3).get(0).get(1)}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-plus-square"></i></a> 
+	         ${resultat.get(3).get(0).get(0)} &nbsp;+&nbsp; ${resultat.get(3).get(0).get(1)}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter4" role="button"><i class="fas mr-2 fa-plus-square"></i></a> 
 	    </c:otherwise>
 	</c:choose>
 	</td>

@@ -52,12 +52,12 @@ public class ContinueJumelleDaoImpl implements ContinueJumelleDao {
 
 	    }
 	    
-	    private static final String[] SQL_SELECT_EPAISSEUR = {"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_150 > ?",
-	    		"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_250 > ?",
-	    		"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_400 > ?",
-	    		"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_500 > ?",
-	    		"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_150T > ?",
-	    		"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_100T > ?"};
+	    private static final String[] SQL_SELECT_EPAISSEUR = {"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_150 >= ?",
+	    		"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_250 >= ?",
+	    		"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_400 >= ?",
+	    		"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_500 >= ?",
+	    		"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_150T >= ?",
+	    		"SELECT epaisseurX,epaisseurY FROM continue_jumelle WHERE charge_100T >= ?"};
 	    public ArrayList<ArrayList<Integer>> calculerEpaisseur(float portee, int numeroCharge) {
 	    	Connection connexion = null;
 	        PreparedStatement preparedStatement = null;
@@ -74,6 +74,7 @@ public class ContinueJumelleDaoImpl implements ContinueJumelleDao {
 	            	ArrayList<Integer> row = new ArrayList<Integer>();
 	            	row.add(resultSet.getInt(1));
 	            	row.add(resultSet.getInt(2));
+	            	System.out.println(row.toString());
 	            	resultat.add(row);
 	            }
 	        } catch ( SQLException e ) {

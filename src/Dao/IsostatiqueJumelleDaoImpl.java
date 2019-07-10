@@ -55,12 +55,12 @@ public class IsostatiqueJumelleDaoImpl implements IsostatiqueJumelleDao {
 	    
 	    
 	    
-	    private static final String[] SQL_SELECT_EPAISSEUR = {"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_150 > ?",
-	    		"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_250 > ?",
-	    		"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_400 > ?",
-	    		"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_500 > ?",
-	    		"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_150T > ?",
-	    		"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_100T > ?"};
+	    private static final String[] SQL_SELECT_EPAISSEUR = {"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_150 >= ?",
+	    		"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_250 >= ?",
+	    		"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_400 >= ?",
+	    		"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_500 >= ?",
+	    		"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_150T >= ?",
+	    		"SELECT epaisseurX,epaisseurY FROM isostatique_jumelle WHERE charge_100T >= ?"};
 	    public ArrayList<ArrayList<Integer>> calculerEpaisseur(float portee, int numeroCharge) {
 	    	Connection connexion = null;
 	        PreparedStatement preparedStatement = null;
