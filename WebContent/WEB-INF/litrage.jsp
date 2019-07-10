@@ -163,15 +163,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 				</div> 
 			</div><!-- end of row -->
-				<br>
+				
 			<div class="col-md-6 styled-input mt-md-0">
 				<h3>Superficie de dalle :<br></h3>
 				<input type="text" name="superficie" placeholder="Mètre carré" required>
-				<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
+				
 			<span class="erreur">${erreur['erreur']}</span>
 			</div> 
 
 			<div class="click text-center mt-3">
+			<a href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a>
 				<input type="submit" name ="calcul" value="Afficher résultat">
 			</div>
 		</form>

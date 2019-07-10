@@ -73,8 +73,7 @@ public class ContinueJumelleDaoImpl implements ContinueJumelleDao {
 	            while ( resultSet.next() ) {
 	            	ArrayList<Integer> row = new ArrayList<Integer>();
 	            	row.add(resultSet.getInt(1));
-	            	row.add(resultSet.getInt(2));
-	            	System.out.println(row.toString());
+	            	row.add(resultSet.getInt(2)); 
 	            	resultat.add(row);
 	            }
 	        } catch ( SQLException e ) {

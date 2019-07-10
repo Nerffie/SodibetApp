@@ -119,7 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>Faux plafond :<br></h3>
 				
 				<input type="text" name="hfp" placeholder="en centimètre" required>
-				<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
+				
 				<span class="erreur">${erreur['erreur_type']}</span>
 				<span class="erreur">${erreur['erreur_condition']}</span>	
 				</div>
@@ -131,6 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 			</div>
 			<div class="click text-center mt-3">
+			<a href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a>
 				<input type="submit" name ="calcul" value="Afficher résultat">
 			</div>
 		</form>

@@ -157,10 +157,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<option class="form-control" value="8">8
 								<option class="form-control" value="10">10
 					</select>
-					<p><a data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a></p>
+					
 				</div> 
 			</div>
-			<div class="click text-center mt-3">
+			
+			<div class="click text-center mt-3"><a href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button"><i class="fas mr-2 fa-question-circle"></i></a>
 				<input type="submit" name ="calcul" value="Afficher résultat">	
 			</div>
 		</form>
