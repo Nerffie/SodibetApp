@@ -77,21 +77,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<form action="#" class="mt-4" method="post">
 					<table>
 					<tr>
-					<td><input class="form-control" type="text" name="prenom" placeholder="Prénom" required/></td>
-					<td><input class="form-control" type="text" name="nom" placeholder="Nom" required/></td>
+					<td><input class="form-control" type="text" name="prenom" placeholder="* Prénom" required/></td>
+					<td><input class="form-control" type="text" name="nom" placeholder="* Nom" required/></td>
 					</tr>
 					</table>
-					<input class="form-control" type="email" name="email" placeholder="Email" required/>
+					<input class="form-control" type="email" name="email" placeholder="* Email" required/>
 					<span class="erreur">${form.erreurs['email']}</span>
 					
-					<input class="form-control" type="password" name="password" placeholder="Mot de passe" required/>
+					<input class="form-control" type="password" name="password" placeholder="* Mot de passe" required/>
 					<span class="erreur">${form.erreurs['password']}</span>
-					<input class="form-control" type="password" name="password_confirmation" placeholder="Confirmer mot de passe" required />
+					<input class="form-control" type="password" name="password_confirmation" placeholder="* Confirmer mot de passe" required />
 					<span class="erreur">${form.erreurs['password_confirmation']}</span>
 					
-					<input class="form-control" type="text" name="ville" placeholder="Ville" required/>
-					<label class ="form-control "for="dateNaissance">Date de naissance</label>
-					<input class="form-control" id = "dateNaissance"type="date" name="date_naissance" placeholder="Date de naissance" required/><br>
+					<input class="form-control" type="text" name="ville" placeholder="* Ville" required/>
+					<label class ="form-control "for="dateNaissance">Date de naissance (facultatif)</label>
+					<input class="form-control" id = "dateNaissance"type="date" name="date_naissance" placeholder="Date de naissance"/><br>
 					<!--  <td><label class="form-control" for="categorie">Sélectionnez catégorie</label></td>-->
 					
 					<select class="form-control" name="categorie" id="categorie" onchange="sous_categorie_show(this);" required>

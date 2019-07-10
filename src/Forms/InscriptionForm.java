@@ -61,13 +61,16 @@ public class InscriptionForm {
 	    String birthday = getValeurChamp(request,CHAMP_DATE_NAISSANCE);
 	    java.util.Date date;
 	    Date date_naissance =null;
-	    try {
-	    	date = new SimpleDateFormat("yyyy-MM-dd").parse(birthday);
-			date_naissance = new java.sql.Date(date.getTime());
-		} catch (ParseException e1) {
-			System.out.println("ERREUR LORS DE LA TRANSFORMATION DE LA DATE");
-			e1.printStackTrace();
-		}
+	    if(birthday!=null) {
+	    	try {
+		    	date = new SimpleDateFormat("yyyy-MM-dd").parse(birthday);
+				date_naissance = new java.sql.Date(date.getTime());
+			} catch (ParseException e1) {
+				System.out.println("ERREUR LORS DE LA TRANSFORMATION DE LA DATE");
+				e1.printStackTrace();
+			}
+	    }
+	    
 	    
 	    Utilisateur utilisateur = new Utilisateur();
 	    
@@ -76,7 +79,10 @@ public class InscriptionForm {
 	    traiterEmail(email, utilisateur);
 	    utilisateur.setCategorie(categorie);
 	    utilisateur.setSous_categorie(sous_categorie);
+	    
 	    utilisateur.setDate_naissance(date_naissance);
+	    
+	    
 	    utilisateur.setNom( nom );
 	    utilisateur.setPrenom(prenom);
 	    utilisateur.setVille(ville);
