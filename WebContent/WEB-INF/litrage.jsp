@@ -102,67 +102,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container py-lg-3">
 		<form action="#" method="post" data-aos="fade-up">
 			
-				<h3>Epaisseur de la dalle de compression :<br></h3>
-			<div class="row">
-				<div class="col-md-6 styled-input">
-					<select class="form-control" name="epaisseurX" id="epaisseurX" onchange="epaisseur(this);" required>
+				<h3>Epaisseur de plancher :<br></h3>
+			<table class="col-md-6 styled-input text-center">
+			<tr>
+			<td>(a)</td>
+			<td><select class="form-control" name="epaisseurX" id="epaisseurX" onchange="epaisseur(this);" required>
 						<option class="form-control" selected value="12">12
 						<option class="form-control" value="16">16
 						<option class="form-control" value="20">20
 						<option class="form-control" value="25">25
 						<option class="form-control" value="30">30
-					</select>
-				</div>
-				
-				<div class="col-md-6 styled-input">
-					<select class="form-control" name="epaisseurY12" id="epaisseur12" style="display:block;">
+					</select></td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>+&nbsp;&nbsp;&nbsp;&nbsp;</td><td>(b)</td>
+			<td><select class="form-control" name="epaisseurY12" id="epaisseur12" style="display:block;">
 								<option class="form-control" value="4">4
-								<option class="form-control" value="5">5
-								<option class="form-control" value="6">6
-								<option class="form-control" value="7">7
-								<option class="form-control" value="8">8
-								<option class="form-control" value="9">9
-								<option class="form-control" value="10">10
 					</select>
 					<select class="form-control" name="epaisseurY16" id="epaisseur16" style="display:none;">
 								<option class="form-control" value="4">4
 								<option class="form-control" value="5">5
 								<option class="form-control" value="6">6
-								<option class="form-control" value="7">7
-								<option class="form-control" value="8">8
-								<option class="form-control" value="9">9
-								<option class="form-control" value="10">10
 					</select>
 					<select class="form-control" name="epaisseurY20" id="epaisseur20" style="display:none;">
-								
 								<option class="form-control" value="5">5
 								<option class="form-control" value="6">6
 								<option class="form-control" value="7">7
-								<option class="form-control" value="8">8
-								<option class="form-control" value="9">9
-								<option class="form-control" value="10">10
 					</select>
 					<select class="form-control" name="epaisseurY25" id="epaisseur25" style="display:none;">
-								
 								<option class="form-control" value="5">5
 								<option class="form-control" value="6">6
 								<option class="form-control" value="7">7
 								<option class="form-control" value="8">8
-								<option class="form-control" value="9">9
-								<option class="form-control" value="10">10
 					</select>
 					<select class="form-control" name="epaisseurY30" id="epaisseur30" style="display:none;">
-							
 								<option class="form-control" value="5">5
 								<option class="form-control" value="6">6
 								<option class="form-control" value="7">7
 								<option class="form-control" value="8">8
-								<option class="form-control" value="9">9
 								<option class="form-control" value="10">10
-					</select>
-					
-				</div> 
-			</div><!-- end of row -->
+					</select></td>
+			</tr>
+			</table><br>
 				
 			<div class="col-md-6 styled-input mt-md-0">
 				<h3>Superficie de dalle :<br></h3>
@@ -176,6 +155,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<input type="submit" name ="calcul" value="Afficher résultat">
 			</div>
 		</form>
+		<br>
+		<p>a : épaisseur (hauteur) des hourdis </p>
+<p>b : épaisseur de la dalle de compression (qui ne peut être inférieure à 4 cm) </p>
 	</div>
 </section>
 <!-- //header -->
