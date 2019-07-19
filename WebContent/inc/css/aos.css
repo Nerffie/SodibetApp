@@ -166,7 +166,7 @@ a {
   padding-bottom: 40px;
   left: 0;
   right: 0;
-  text-transform: uppercase; }
+  text-transform: none; }
   .hero__scroll .chevron {
     margin-top: 20px;
     display: block;
@@ -247,7 +247,7 @@ a {
 .section-title {
   text-align: center;
   color: #FFF;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: normal;
   padding: 30px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -296,7 +296,7 @@ a {
   padding: 30px 0; }
   .section-group h3 {
     margin: 0 0 20px 0;
-    text-transform: uppercase; }
+    text-transform: none; }
   .section-group h4 {
     font-weight: normal;
     color: rgba(255, 255, 255, 0.6); }

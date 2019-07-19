@@ -155,7 +155,7 @@ ul.nav-agile {
 div#word-mark h1 a {
   color: #fff;
   font-size: 1em;
-  text-transform: capitalize;
+  text-transform: none;
   font-weight: 600;
   line-height: 0;
   letter-spacing: 1px;
@@ -282,7 +282,7 @@ div#hero-section:before {
 h1.w3-title {
   color: #fff;
   font-size: 4em;
-  text-transform: capitalize;
+  text-transform: none;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -424,7 +424,7 @@ section {
     color: #fff;
     display: inline-block;
     font-size: 3.5em;
-    text-transform: capitalize;
+    text-transform: none;
     font-weight: 400;
 	line-height: 80px;
 }
@@ -455,7 +455,7 @@ section {
 h3.txt-w3_agile {
     font-size: 3.2em;
     color: #fff;
-    text-transform: capitalize;
+    text-transform: none;
     font-weight: 100;
 }
 
@@ -641,7 +641,7 @@ h3.heading {
     font-size: 45px;
     font-weight: 600;
     color: #333;
-    text-transform: capitalize;
+    text-transform: none;
     letter-spacing: 0;
 }
 .f1 h3 {
@@ -683,7 +683,7 @@ h3.heading {
     font-size: 34px;
     font-weight: 600;
     color: #333;
-    text-transform: capitalize;
+    text-transform: none;
     display: inline-block;
     letter-spacing: 0;
     line-height: 50px;
@@ -812,7 +812,7 @@ ul.list-unstyled li {
     color: #4e4c4c;
     background: transparent;
     font-weight:400;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 0.9em;
     margin: 0 0.5em;
     border-radius: 0;
@@ -853,7 +853,7 @@ p.sub-meta {
     color: #4e4f50;
     text-shadow: 0 1px 2px rgba(18, 18, 19, 0.13);
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .text-info-sec i {
@@ -891,7 +891,7 @@ ul.faq p {
     border: 1px solid #ccc;
     font-size: 16px;
     width: 100%;
-	text-transform: capitalize;
+	text-transform: none;
     background: rgba(229, 143, 230, 0);
     outline: none;
     letter-spacing: 1px;
@@ -952,7 +952,7 @@ ul.faq p {
     font-size: 1.3em;
     line-height: 1.71;
     letter-spacing: 1px;
-    text-transform: capitalize;
+    text-transform: none;
     color: #fff;
 }
 .copyright {
@@ -962,7 +962,7 @@ ul.faq p {
 .copyright p {
     font-size: 15px;
     letter-spacing: .5px;
-    text-transform: capitalize;
+    text-transform: none;
 }
 .copyright p a{
 	color:#ea1d5d;
@@ -1110,7 +1110,7 @@ ul.links li a:hover{
 }
 .footer-title a {
     font-size: 33px;
-    text-transform: capitalize;
+    text-transform: none;
     font-weight: 600;
     color: #eee;
 }
@@ -1339,7 +1339,7 @@ ul.callbacks_tabs {
 
 
 .testi-pos h4 {
-    text-transform: capitalize;
+    text-transform: none;
     font-size: 25px;
     color: #333;
     font-weight: 600;
@@ -1348,7 +1348,7 @@ ul.callbacks_tabs {
 .testi-pos span {
     color: #999;
     font-size: 16px;
-    text-transform: capitalize;
+    text-transform: none;
     letter-spacing: .5px;
 }
 .rslides li ul.d-flex li{
@@ -1361,7 +1361,7 @@ ul.d-flex li i {
 .testi-agile h4 {
 	color: #fff;
 	font-size: 1em;
-	text-transform: capitalize;
+	text-transform: none;
 	margin: 1em 0 0.5em;
 	font-weight: bold;
 }
