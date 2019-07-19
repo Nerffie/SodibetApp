@@ -55,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="bar"></div>
           </div>
         </div>
-        <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
+        <ul class="text-center nav-agile" data-aos="zoom-in-up">
           <li>
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
@@ -112,7 +112,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="row footer-top mt-md-5 mt-4">
 			<div class="col-lg-4 col-md-6 footer-grid_section_1its_w3" data-aos="fade-right">
 				<div class="footer-title">
-					<h3>Contact</h3>
+					<h3>Contacts</h3>
 				</div>
 				<div class="footer-text">
 					<p>Adresse siège social : Quartier industriel Old Ogba, avenue Hassan II, Km 6 RP1 TEMARA</p>

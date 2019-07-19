@@ -82,7 +82,7 @@ table#t01 th {
             <div class="bar"></div>
           </div>
         </div>
-        <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
+        <ul class="text-center nav-agile" data-aos="zoom-in-up">
           <li>
             <a href="Predimensionnement" class="active"><u><b>Prédimensionnement</b></u></a>
           </li>

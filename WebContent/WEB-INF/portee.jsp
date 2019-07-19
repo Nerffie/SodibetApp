@@ -61,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="bar"></div>
           </div>
         </div>
-        <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
+        <ul class="text-center nav-agile" data-aos="zoom-in-up">
           <li>
             <a href="Predimensionnement" class="active"><u><b>Prédimensionnement</b></u></a>
           </li>
@@ -211,7 +211,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</form>
 		<br>
 		<p>a : épaisseur (hauteur) des hourdis </p>
-<p>b : épaisseur de la dalle de compression (qui ne peut être inférieure à 4 cm) </p>
+<p>b : épaisseur de la dalle de compression </p>
+<p>a+b : épaisseur du plancher</p>
 	</div>
 </section>
 <!-- //contact -->

@@ -56,7 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="bar"></div>
           </div>
         </div>
-        <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
+        <ul class="text-center nav-agile" data-aos="zoom-in-up">
           <li>
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
@@ -99,7 +99,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- contact -->
 <section class="contact py-5" id="contact">
 	<div class="container py-lg-3">
-		<h3 class="heading mb-5 text-center" data-aos="zoom-in">Posez une question</h3>
+		<h3 class="mb-5 text-center" data-aos="zoom-in"><b>Posez une question</b></h3>
 		<form action="#" method="post" data-aos="fade-up">
 			<div class="row">
 				<div class="col-md-12 styled-input mt-0">

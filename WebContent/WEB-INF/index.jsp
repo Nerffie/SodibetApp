@@ -77,7 +77,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="bar"></div>
           </div>
         </div>
-        <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
+        <ul class="text-center nav-agile" data-aos="zoom-in-up">
           <li>
             <a href="Predimensionnement" class="active">Prédimensionnement</a>
           </li>
